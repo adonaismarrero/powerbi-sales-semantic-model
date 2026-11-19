@@ -5,7 +5,7 @@ expression SourceMode = "Sample" meta [IsParameterQuery=true, List={"Sample", "B
 	annotation PBI_ResultType = Text
 
 /// Sample mode: base URL (https://...) or local folder (ending in \) with the CSV files.
-expression SampleDataPath = "https://raw.githubusercontent.com/adonaismarrero/powerbi-sales-semantic-model/main/sample-data/" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+expression SampleDataPath = "https://raw.githubusercontent.com/adonaismarrero/powerbi-sales-semantic-model/main/sample-data/" meta [IsParameterQuery = true, IsParameterQueryRequired = true, Type = type text]
 	lineageTag: 33955b09-ac4b-4d25-9d58-805cf3f4e05a
 
 	annotation PBI_ResultType = Text

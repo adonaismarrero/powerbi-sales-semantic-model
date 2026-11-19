@@ -27,6 +27,8 @@ table Sales
 		summarizeBy: none
 		sourceColumn: order_date
 
+		annotation UnderlyingDateTimeDataType = Date
+
 	column 'Customer ID'
 		dataType: int64
 		isHidden
@@ -140,4 +142,6 @@ table Sales
 				    }, "en-US")
 				in
 				    Typed
+
+	annotation PBI_ResultType = Table
 

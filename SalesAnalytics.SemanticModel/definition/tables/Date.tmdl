@@ -11,6 +11,8 @@ table Date
 		summarizeBy: none
 		sourceColumn: date_day
 
+		annotation UnderlyingDateTimeDataType = Date
+
 	column Year
 		dataType: int64
 		formatString: 0
@@ -117,4 +119,6 @@ table Date
 				    }, "en-US")
 				in
 				    Typed
+
+	annotation PBI_ResultType = Table
 

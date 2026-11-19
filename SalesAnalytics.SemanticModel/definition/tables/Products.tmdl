@@ -81,3 +81,5 @@ table Products
 				in
 				    WithOrder
 
+	annotation PBI_ResultType = Table
+

@@ -34,3 +34,5 @@ table Security
 				in
 				    Source
 
+	annotation PBI_ResultType = Table
+

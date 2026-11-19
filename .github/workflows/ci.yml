@@ -21,16 +21,17 @@ jobs:
         run: dotnet run --project tools/ModelValidator -- SalesAnalytics.SemanticModel/definition
 
   pbip-files:
-    name: PBIP files are valid JSON
+    name: Report and PBIP files match the Microsoft schemas
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - name: Parse JSON artifacts (pbip, pbism, pbir, .platform, PBIR report)
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Validate every JSON artifact against its $schema
         run: |
-          find . -path ./.git -prune -o -type f \( -name "*.json" -o -name "*.pbip" -o -name "*.pbir"                -o -name "*.pbism" -o -name ".platform" \) -print | sort | while read -r f; do
-            python3 -m json.tool "$f" > /dev/null || { echo "INVALID $f"; exit 1; }
-            echo "OK  $f"
-          done
+          pip install --quiet jsonschema
+          python tools/validate_pbir.py
 
   sample-data:
     name: Sample marts are reproducible
