@@ -20,6 +20,8 @@ unos **CSV de ejemplo** incluidos en el repositorio, así que se abre y funciona
 > source (BigQuery or bundled sample CSVs). CI loads the TMDL with the Tabular Object Model,
 > checks every DAX reference and enforces modelling rules.
 
+![Página Overview del informe](docs/overview.png)
+
 ---
 
 ## Arquitectura
