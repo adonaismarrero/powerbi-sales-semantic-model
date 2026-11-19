@@ -11,19 +11,19 @@ table 'Time Intelligence'
 
 		calculationItem YTD = CALCULATE ( SELECTEDMEASURE (), DATESYTD ( 'Date'[Date] ) )
 
-		calculationItem PY = CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+		calculationItem PY = CALCULATE ( SELECTEDMEASURE (), CALCULATETABLE ( SAMEPERIODLASTYEAR ( 'Date'[Date] ), 'Date'[Date With Sales] = TRUE ) )
 
 		calculationItem YoY =
 				VAR CurrentValue = SELECTEDMEASURE ()
 				VAR PreviousValue =
-				    CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+				    CALCULATE ( SELECTEDMEASURE (), CALCULATETABLE ( SAMEPERIODLASTYEAR ( 'Date'[Date] ), 'Date'[Date With Sales] = TRUE ) )
 				RETURN
 				    IF ( NOT ISBLANK ( CurrentValue ) && NOT ISBLANK ( PreviousValue ), CurrentValue - PreviousValue )
 
 		calculationItem 'YoY %' =
 				VAR CurrentValue = SELECTEDMEASURE ()
 				VAR PreviousValue =
-				    CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+				    CALCULATE ( SELECTEDMEASURE (), CALCULATETABLE ( SAMEPERIODLASTYEAR ( 'Date'[Date] ), 'Date'[Date With Sales] = TRUE ) )
 				RETURN
 				    IF ( NOT ISBLANK ( CurrentValue ), DIVIDE ( CurrentValue - PreviousValue, PreviousValue ) )
 

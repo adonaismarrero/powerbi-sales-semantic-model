@@ -83,6 +83,8 @@ sin crear una relación adicional.
 Un único **grupo de cálculo** sustituye a decenas de medidas duplicadas (`Net Revenue YTD`,
 `Orders PY`…): basta con poner *Time Calculation* en columnas o en un segmentador. *YoY %*
 fuerza su propio formato de porcentaje.
+*PY*, *YoY* y *YoY %* solo desplazan fechas con ventas (`Date[Date With Sales]`), así que los
+años futuros del calendario no muestran un año anterior sin ventas actuales.
 
 ### Seguridad a nivel de fila (RLS)
 

@@ -84,6 +84,15 @@ table Date
 		summarizeBy: none
 		sourceColumn: is_weekend
 
+	/// TRUE up to the last order date. Time-intelligence items shift only these dates, so
+	/// future years of the calendar do not show a previous-year value without current sales.
+	column 'Date With Sales' = 'Date'[Date] <= MAX ( Sales[Order Date] )
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: bf48f309-3fa2-44ed-982c-53a989f96e2b
+		summarizeBy: none
+
 	hierarchy Calendar
 		lineageTag: 569f94fd-e4c5-4cf6-85f0-6d0d3eb53168
 
