@@ -9,3 +9,5 @@ role 'Regional Manager'
 			        Security[User Email] = USERPRINCIPALNAME ()
 			    )
 
+	annotation PBI_Id = 746ce4c9c8a445a8a2feb5d981d3f14a
+

@@ -1,6 +1,6 @@
 relationship Sales_Date
 	fromColumn: Sales.'Order Date'
-	toColumn: 'Date'.Date
+	toColumn: Date.Date
 
 relationship Sales_Customers
 	fromColumn: Sales.'Customer ID'

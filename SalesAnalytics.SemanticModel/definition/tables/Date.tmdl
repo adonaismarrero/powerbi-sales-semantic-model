@@ -1,17 +1,20 @@
 /// Calendar (marts.dim_date), marked as the date table of the model.
-table 'Date'
+table Date
+	lineageTag: 73daf223-4ea0-4f40-861d-07bf6a10ebf3
 	dataCategory: Time
 
 	column Date
 		dataType: dateTime
 		isKey
 		formatString: yyyy-mm-dd
+		lineageTag: 7c97e84e-761e-48bc-b4ff-33c9567d7a50
 		summarizeBy: none
 		sourceColumn: date_day
 
 	column Year
 		dataType: int64
 		formatString: 0
+		lineageTag: 99be612c-8cbb-482d-8ce9-49270174e9e4
 		summarizeBy: none
 		sourceColumn: year
 
@@ -19,11 +22,13 @@ table 'Date'
 		dataType: int64
 		isHidden
 		formatString: 0
+		lineageTag: af090760-82b8-45a6-ac23-ac18d22c37b7
 		summarizeBy: none
 		sourceColumn: quarter
 
 	column 'Quarter Label' = "Q" & 'Date'[Quarter]
 		dataType: string
+		lineageTag: 5a8a8edb-4f01-4966-95fb-58e2854d5aeb
 		summarizeBy: none
 		sortByColumn: Quarter
 
@@ -31,23 +36,27 @@ table 'Date'
 		dataType: int64
 		isHidden
 		formatString: 0
+		lineageTag: 53647403-c719-4841-8c69-cb3573e1794c
 		summarizeBy: none
 		sourceColumn: month
 
 	column 'Month Name' = FORMAT ( 'Date'[Date], "MMM" )
 		dataType: string
+		lineageTag: 1a92bd87-963b-4eb0-82a8-6df56e44380b
 		summarizeBy: none
 		sortByColumn: Month
 
 	/// Year and month as text (2025-01), sorts chronologically.
 	column 'Year Month'
 		dataType: string
+		lineageTag: 89c11914-309b-482b-9360-b0ba5bb64a5f
 		summarizeBy: none
 		sourceColumn: year_month
 
 	column 'ISO Week'
 		dataType: int64
 		formatString: 0
+		lineageTag: 14ac6a31-7e13-4f47-9657-dcdaafd90f3f
 		summarizeBy: none
 		sourceColumn: iso_week
 
@@ -55,11 +64,13 @@ table 'Date'
 		dataType: int64
 		isHidden
 		formatString: 0
+		lineageTag: 6fb04ce7-adda-4136-b46c-e08ce8ade269
 		summarizeBy: none
 		sourceColumn: day_of_week
 
 	column 'Day Name'
 		dataType: string
+		lineageTag: ad03d195-7b47-4bfa-a227-a4b19edfb5da
 		summarizeBy: none
 		sourceColumn: day_name
 		sortByColumn: 'Day of Week'
@@ -67,24 +78,30 @@ table 'Date'
 	column 'Is Weekend'
 		dataType: boolean
 		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b1b101bc-fe75-4c1e-a150-094e3cf821fe
 		summarizeBy: none
 		sourceColumn: is_weekend
 
 	hierarchy Calendar
+		lineageTag: 569f94fd-e4c5-4cf6-85f0-6d0d3eb53168
 
 		level Year
+			lineageTag: b83dbd05-6bf5-434d-9dbd-80e2c2e7122a
 			column: Year
 
 		level Quarter
+			lineageTag: 6fa3c0ba-ed45-4d83-87af-41f168fba719
 			column: 'Quarter Label'
 
 		level Month
+			lineageTag: 62c679ab-3990-4ae1-88bc-f2922041cf6f
 			column: 'Month Name'
 
 		level Day
+			lineageTag: 5a6146c3-20a1-4f1e-8480-a208427c81e7
 			column: Date
 
-	partition 'Date' = m
+	partition Date = m
 		mode: import
 		source =
 				let

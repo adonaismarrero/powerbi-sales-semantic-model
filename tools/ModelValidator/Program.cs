@@ -114,6 +114,18 @@ foreach (SingleColumnRelationship rel in model.Relationships.OfType<SingleColumn
         warnings.Add($"Relationship {rel.Name}: bidirectional filtering");
 }
 
+// Sort-by-column on a calculated column derived from the sorted column = circular dependency
+// (Power BI rejects it when the model is saved: "A circular dependency was detected").
+foreach (var table in model.Tables)
+    foreach (var column in table.Columns.Where(c => c.SortByColumn is CalculatedColumn))
+    {
+        var sortBy = (CalculatedColumn)column.SortByColumn;
+        if (Regex.IsMatch(StripLiterals(sortBy.Expression ?? ""), $@"\[{Regex.Escape(column.Name)}\]",
+                          RegexOptions.IgnoreCase))
+            errors.Add($"Circular dependency: '{table.Name}'[{column.Name}] is sorted by " +
+                       $"[{sortBy.Name}], a calculated column that depends on it");
+    }
+
 var dateTables = model.Tables.Where(t => t.DataCategory == "Time").ToList();
 if (dateTables.Count != 1)
     errors.Add($"Expected exactly one table marked as date table, found {dateTables.Count}");

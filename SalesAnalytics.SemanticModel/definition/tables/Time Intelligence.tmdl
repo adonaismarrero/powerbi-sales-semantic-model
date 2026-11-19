@@ -1,24 +1,17 @@
 /// Calculation group: applies the selected time calculation to ANY measure of the model.
 table 'Time Intelligence'
+	lineageTag: 42c472e5-af1f-4253-853b-4d2698578656
 
 	calculationGroup
 		precedence: 1
 
 		calculationItem Current = SELECTEDMEASURE ()
 
-			ordinal: 0
-
 		calculationItem MTD = CALCULATE ( SELECTEDMEASURE (), DATESMTD ( 'Date'[Date] ) )
-
-			ordinal: 1
 
 		calculationItem YTD = CALCULATE ( SELECTEDMEASURE (), DATESYTD ( 'Date'[Date] ) )
 
-			ordinal: 2
-
 		calculationItem PY = CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
-
-			ordinal: 3
 
 		calculationItem YoY =
 				VAR CurrentValue = SELECTEDMEASURE ()
@@ -27,8 +20,6 @@ table 'Time Intelligence'
 				RETURN
 				    IF ( NOT ISBLANK ( CurrentValue ) && NOT ISBLANK ( PreviousValue ), CurrentValue - PreviousValue )
 
-			ordinal: 4
-
 		calculationItem 'YoY %' =
 				VAR CurrentValue = SELECTEDMEASURE ()
 				VAR PreviousValue =
@@ -36,11 +27,11 @@ table 'Time Intelligence'
 				RETURN
 				    IF ( NOT ISBLANK ( CurrentValue ), DIVIDE ( CurrentValue - PreviousValue, PreviousValue ) )
 
-			ordinal: 5
 			formatStringDefinition = "0.0%"
 
 	column 'Time Calculation'
 		dataType: string
+		lineageTag: c104a662-7fed-424f-b977-b9a948cce90c
 		summarizeBy: none
 		sourceColumn: Name
 		sortByColumn: Ordinal
@@ -49,6 +40,7 @@ table 'Time Intelligence'
 		dataType: int64
 		isHidden
 		formatString: 0
+		lineageTag: e75780a7-5181-4dd7-8d4c-e9307dafb468
 		summarizeBy: none
 		sourceColumn: Ordinal
 

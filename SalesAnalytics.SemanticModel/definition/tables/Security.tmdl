@@ -2,16 +2,19 @@
 /// Demo data inline; in production this table would come from the identity source.
 table Security
 	isHidden
+	lineageTag: ca5961b0-7f1a-443c-9396-4a4d7e82c5a9
 
 	column 'User Email'
 		dataType: string
 		isHidden
+		lineageTag: 01de8a16-d708-45ca-9b62-cec2398a4276
 		summarizeBy: none
 		sourceColumn: User Email
 
 	column Region
 		dataType: string
 		isHidden
+		lineageTag: 3f29ca9a-4e41-4b65-8c72-47d39289638d
 		summarizeBy: none
 		sourceColumn: Region
 

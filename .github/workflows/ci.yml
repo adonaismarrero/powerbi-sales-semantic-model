@@ -25,11 +25,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - name: Parse JSON artifacts
+      - name: Parse JSON artifacts (pbip, pbism, pbir, .platform, PBIR report)
         run: |
-          for f in SalesAnalytics.pbip SalesAnalytics.SemanticModel/definition.pbism \
-                   SalesAnalytics.Report/definition.pbir SalesAnalytics.Report/report.json; do
-            python3 -m json.tool "$f" > /dev/null && echo "OK  $f"
+          find . -path ./.git -prune -o -type f \( -name "*.json" -o -name "*.pbip" -o -name "*.pbir"                -o -name "*.pbism" -o -name ".platform" \) -print | sort | while read -r f; do
+            python3 -m json.tool "$f" > /dev/null || { echo "INVALID $f"; exit 1; }
+            echo "OK  $f"
           done
 
   sample-data:

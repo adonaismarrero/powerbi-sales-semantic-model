@@ -1,11 +1,13 @@
 /// Sales fact at order-line grain (marts.fct_sales). Numeric columns are hidden: use the measures.
 table Sales
+	lineageTag: daa88380-d61f-4916-8c9e-aea4c200c2bb
 
 	column 'Order Item ID'
 		dataType: int64
 		isHidden
 		isKey
 		formatString: 0
+		lineageTag: 1f646481-2825-49ff-a025-d40fcfd2b33a
 		summarizeBy: none
 		sourceColumn: order_item_id
 
@@ -13,6 +15,7 @@ table Sales
 		dataType: int64
 		isHidden
 		formatString: 0
+		lineageTag: 39d00a39-1121-4fc9-aa73-f9459cc7fc5d
 		summarizeBy: none
 		sourceColumn: order_id
 
@@ -20,6 +23,7 @@ table Sales
 		dataType: dateTime
 		isHidden
 		formatString: yyyy-mm-dd
+		lineageTag: 59f00646-6997-43e2-94d1-34d6802f161b
 		summarizeBy: none
 		sourceColumn: order_date
 
@@ -27,6 +31,7 @@ table Sales
 		dataType: int64
 		isHidden
 		formatString: 0
+		lineageTag: 835f34ee-fde2-4570-b8bf-31b347d3f48a
 		summarizeBy: none
 		sourceColumn: customer_id
 
@@ -34,23 +39,27 @@ table Sales
 		dataType: int64
 		isHidden
 		formatString: 0
+		lineageTag: dd0ca4c3-78bd-49f2-a7bb-4d72a5d41f44
 		summarizeBy: none
 		sourceColumn: product_id
 
 	/// Sales channel: web, app or marketplace.
 	column Channel
 		dataType: string
+		lineageTag: a308372f-5311-4608-b19a-119c7d8a1367
 		summarizeBy: none
 		sourceColumn: channel
 
 	column 'Payment Method'
 		dataType: string
+		lineageTag: 902f7024-0993-49a1-9ead-36db617015ac
 		summarizeBy: none
 		sourceColumn: payment_method
 
 	/// delivered, shipped, cancelled or returned.
 	column Status
 		dataType: string
+		lineageTag: 39389ed3-d4a8-4fd1-9e8f-c86781b95634
 		summarizeBy: none
 		sourceColumn: status
 
@@ -58,6 +67,7 @@ table Sales
 	column 'Is Revenue'
 		dataType: boolean
 		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b7a59fcc-9d8e-4de9-8533-9d9e8f2198b2
 		summarizeBy: none
 		sourceColumn: is_revenue
 
@@ -65,6 +75,7 @@ table Sales
 		dataType: int64
 		isHidden
 		formatString: #,0
+		lineageTag: 50f0f5b5-d949-452b-870a-65cb26a6c047
 		summarizeBy: sum
 		sourceColumn: quantity
 
@@ -72,6 +83,7 @@ table Sales
 		dataType: decimal
 		isHidden
 		formatString: #,0.00
+		lineageTag: eb77d426-07a5-45eb-ab44-f1cc9992b3dd
 		summarizeBy: sum
 		sourceColumn: gross_amount
 
@@ -79,6 +91,7 @@ table Sales
 		dataType: decimal
 		isHidden
 		formatString: #,0.00
+		lineageTag: 1fb37d6a-d93f-4d5a-9cdc-5f3986e24a0b
 		summarizeBy: sum
 		sourceColumn: discount_amount
 
@@ -86,6 +99,7 @@ table Sales
 		dataType: decimal
 		isHidden
 		formatString: #,0.00
+		lineageTag: 9b5fbbc3-8131-40aa-9451-5e6c8c564348
 		summarizeBy: sum
 		sourceColumn: net_amount
 
@@ -93,6 +107,7 @@ table Sales
 		dataType: decimal
 		isHidden
 		formatString: #,0.00
+		lineageTag: 23c0fac6-0c43-45f4-b493-a12fc386a175
 		summarizeBy: sum
 		sourceColumn: cost_amount
 
@@ -100,6 +115,7 @@ table Sales
 		dataType: decimal
 		isHidden
 		formatString: #,0.00
+		lineageTag: 7deac6f4-916a-4a18-af10-d098f6f17383
 		summarizeBy: sum
 		sourceColumn: margin_amount
 

@@ -1,6 +1,7 @@
 /// Home table for all measures, grouped in display folders.
 /// Combine any measure with the 'Time Intelligence' calculation group for MTD, YTD, PY and YoY.
 table _Measures
+	lineageTag: d3afc3ae-861a-4e5b-a8fb-a92c0032b192
 
 	/// Revenue after discounts, VAT excluded, of delivered and shipped orders.
 	measure 'Net Revenue' =
@@ -10,6 +11,7 @@ table _Measures
 			)
 		formatString: #,0 €
 		displayFolder: 1. Sales
+		lineageTag: 268f4cc1-81cf-49f0-b4f8-1e28206a4bee
 
 	/// Revenue before discounts.
 	measure 'Gross Revenue' =
@@ -19,6 +21,7 @@ table _Measures
 			)
 		formatString: #,0 €
 		displayFolder: 1. Sales
+		lineageTag: 7c470936-6f73-431b-89f5-b47abefb5ab4
 
 	measure Discounts =
 			CALCULATE (
@@ -27,10 +30,12 @@ table _Measures
 			)
 		formatString: #,0 €
 		displayFolder: 1. Sales
+		lineageTag: 0016db73-510e-4b3d-9ee0-d3170d0e8108
 
 	measure 'Discount %' = DIVIDE ( [Discounts], [Gross Revenue] )
 		formatString: 0.0%
 		displayFolder: 1. Sales
+		lineageTag: bfc0e8a4-c269-4e38-b238-701ad5cee822
 
 	measure Units =
 			CALCULATE (
@@ -39,6 +44,7 @@ table _Measures
 			)
 		formatString: #,0
 		displayFolder: 1. Sales
+		lineageTag: 227778a2-d535-4236-af03-d18d200c3cef
 
 	measure Orders =
 			CALCULATE (
@@ -47,11 +53,13 @@ table _Measures
 			)
 		formatString: #,0
 		displayFolder: 1. Sales
+		lineageTag: 0011adb1-6d3c-49a6-a764-d30097d4b935
 
 	/// Average revenue per order (AOV).
 	measure 'Avg Order Value' = DIVIDE ( [Net Revenue], [Orders] )
 		formatString: #,0.00 €
 		displayFolder: 1. Sales
+		lineageTag: 8f45a114-c7e5-44c0-bc4e-04f0e09ab7c6
 
 	/// Net revenue minus cost of goods sold.
 	measure 'Gross Margin' =
@@ -61,10 +69,12 @@ table _Measures
 			)
 		formatString: #,0 €
 		displayFolder: 2. Profitability
+		lineageTag: 9e1618dd-bb7f-4c49-a8c9-32289aec0b4f
 
 	measure 'Gross Margin %' = DIVIDE ( [Gross Margin], [Net Revenue] )
 		formatString: 0.0%
 		displayFolder: 2. Profitability
+		lineageTag: 978dab18-aae2-402e-bc6e-ae26e8af2cdd
 
 	/// Customers with at least one revenue order in the selected period.
 	measure 'Active Customers' =
@@ -74,6 +84,7 @@ table _Measures
 			)
 		formatString: #,0
 		displayFolder: 3. Customers
+		lineageTag: c7bce9c3-77aa-4ffb-8397-2746ec0b95d5
 
 	/// Customers whose first revenue order falls in the selected period.
 	measure 'New Customers' =
@@ -83,38 +94,44 @@ table _Measures
 			)
 		formatString: #,0
 		displayFolder: 3. Customers
+		lineageTag: 073567d4-35e0-4d47-bf29-1b74cbd84bf4
 
 	measure 'Revenue per Customer' = DIVIDE ( [Net Revenue], [Active Customers] )
 		formatString: #,0.00 €
 		displayFolder: 3. Customers
+		lineageTag: ec8f7565-0894-4f77-aec1-eb50556e0089
 
 	/// All orders, whatever their status.
 	measure 'All Orders' = DISTINCTCOUNT ( Sales[Order ID] )
 		formatString: #,0
 		displayFolder: 4. Order quality
+		lineageTag: 096183f0-107c-4175-b778-d0a6bef62106
 
-	measure 'Cancelled Orders' =
-			CALCULATE ( [All Orders], KEEPFILTERS ( Sales[Status] = "cancelled" ) )
+	measure 'Cancelled Orders' = CALCULATE ( [All Orders], KEEPFILTERS ( Sales[Status] = "cancelled" ) )
 		formatString: #,0
 		displayFolder: 4. Order quality
+		lineageTag: 8a438de4-f4cd-4ab0-bffd-334341244c70
 
-	measure 'Returned Orders' =
-			CALCULATE ( [All Orders], KEEPFILTERS ( Sales[Status] = "returned" ) )
+	measure 'Returned Orders' = CALCULATE ( [All Orders], KEEPFILTERS ( Sales[Status] = "returned" ) )
 		formatString: #,0
 		displayFolder: 4. Order quality
+		lineageTag: 92ae41ae-6e3d-4271-9c86-9d77137dc1bf
 
 	measure 'Cancellation Rate' = DIVIDE ( [Cancelled Orders], [All Orders] )
 		formatString: 0.0%
 		displayFolder: 4. Order quality
+		lineageTag: 3fcf1e98-eaad-4d9f-a525-bfff36a4e983
 
 	measure 'Return Rate' = DIVIDE ( [Returned Orders], [All Orders] )
 		formatString: 0.0%
 		displayFolder: 4. Order quality
+		lineageTag: 088b349f-aa30-43b0-bc0f-dc1753d6ea97
 
 	column Placeholder
 		dataType: int64
 		isHidden
 		formatString: 0
+		lineageTag: 54c267db-5ee9-4410-91dc-41e02c4a767c
 		summarizeBy: none
 		sourceColumn: Placeholder
 

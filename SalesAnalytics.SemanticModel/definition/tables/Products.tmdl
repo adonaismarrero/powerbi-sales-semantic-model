@@ -1,21 +1,25 @@
 /// Product dimension (marts.dim_products).
 table Products
+	lineageTag: b3fdff45-6891-4ca5-9555-4401f0cc178d
 
 	column 'Product ID'
 		dataType: int64
 		isHidden
 		isKey
 		formatString: 0
+		lineageTag: ec581203-a2ca-4f72-85e6-29c340616422
 		summarizeBy: none
 		sourceColumn: product_id
 
 	column Product
 		dataType: string
+		lineageTag: b3b36c4c-3aec-4d94-8c0a-dd1f5d8afa18
 		summarizeBy: none
 		sourceColumn: product_name
 
 	column Category
 		dataType: string
+		lineageTag: 1a3c351a-7809-415b-bbb8-8ff9933132a9
 		summarizeBy: none
 		sourceColumn: category
 
@@ -23,31 +27,37 @@ table Products
 	column 'Unit Price'
 		dataType: decimal
 		formatString: #,0.00 €
+		lineageTag: 5a1938fc-0dd0-4b20-88df-09af8c63043a
 		summarizeBy: none
 		sourceColumn: unit_price
 
 	column 'Unit Margin %'
 		dataType: double
 		formatString: 0.0%
+		lineageTag: 923a2628-4f8d-4dc3-8b7d-16bb17df3906
 		summarizeBy: none
 		sourceColumn: unit_margin_pct
 
 	column 'Price Band'
 		dataType: string
+		lineageTag: b3597cc6-3fe5-48b3-a413-477460ba3c61
 		summarizeBy: none
 		sourceColumn: price_band
 		sortByColumn: 'Price Band Order'
 
-	column 'Price Band Order' =
-			SWITCH ( Products[Price Band], "0-25", 1, "25-100", 2, "100-300", 3, "300+", 4, 5 )
+	/// Sort order of Price Band, calculated in Power Query (see Customers[Segment Order]).
+	column 'Price Band Order'
 		dataType: int64
 		isHidden
 		formatString: 0
+		lineageTag: d3cc7db3-e0fb-4c94-b472-8bdbeb6c7541
 		summarizeBy: none
+		sourceColumn: price_band_order
 
 	column 'Is Active'
 		dataType: boolean
 		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: a4b92074-fc06-4b43-8a65-8ce1806f87e1
 		summarizeBy: none
 		sourceColumn: is_active
 
@@ -64,7 +74,10 @@ table Products
 				        {"product_id", Int64.Type}, {"product_name", type text}, {"category", type text},
 				        {"unit_price", Currency.Type}, {"unit_margin_pct", type number},
 				        {"price_band", type text}, {"is_active", type logical}
-				    }, "en-US")
+				    }, "en-US"),
+				    WithOrder = Table.AddColumn(Typed, "price_band_order",
+				        each List.PositionOf({"0-25", "25-100", "100-300", "300+"}, [price_band]) + 1,
+				        Int64.Type)
 				in
-				    Typed
+				    WithOrder
 

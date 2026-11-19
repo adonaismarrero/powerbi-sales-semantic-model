@@ -1,20 +1,24 @@
 /// Where the data comes from: "Sample" (CSV files in this repository) or "BigQuery" (the marts dataset).
 expression SourceMode = "Sample" meta [IsParameterQuery=true, List={"Sample", "BigQuery"}, DefaultValue="Sample", Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 80a0568b-e2bb-47d4-b6b6-27a89ce06779
 
 	annotation PBI_ResultType = Text
 
 /// Sample mode: base URL (https://...) or local folder (ending in \) with the CSV files.
 expression SampleDataPath = "https://raw.githubusercontent.com/adonaismarrero/powerbi-sales-semantic-model/main/sample-data/" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 33955b09-ac4b-4d25-9d58-805cf3f4e05a
 
 	annotation PBI_ResultType = Text
 
 /// BigQuery mode: GCP project that hosts the marts dataset (also used as billing project).
 expression BigQueryProject = "my-company-data-prod" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: de2afc1f-6e20-40e2-8071-8d47dc7e1935
 
 	annotation PBI_ResultType = Text
 
 /// BigQuery mode: dataset built by Dataform with the star schema.
 expression BigQueryDataset = "marts" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: acca71e9-65b8-4835-bdb3-55ddbbf624a2
 
 	annotation PBI_ResultType = Text
 
@@ -39,6 +43,7 @@ expression LoadMart =
 		            FromCsv(File.Contents(SampleDataPath & tableName & ".csv"))
 		in
 		    Source
+	lineageTag: 9e566cab-1bc2-47e2-9401-17768af57910
 
 	annotation PBI_ResultType = Function
 

@@ -11,11 +11,13 @@ annotation PBI_QueryOrder = ["SourceMode","SampleDataPath","BigQueryProject","Bi
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
+annotation PBI_ProTooling = ["DevMode"]
+
 ref table _Measures
 ref table Sales
 ref table Customers
 ref table Products
-ref table 'Date'
+ref table Date
 ref table 'Time Intelligence'
 ref table Security
 

@@ -1,33 +1,39 @@
 /// Customer dimension (marts.dim_customers). Row-level security filters this table by region.
 table Customers
+	lineageTag: 36817643-2f08-411f-b255-3c5250bcf0e1
 
 	column 'Customer ID'
 		dataType: int64
 		isHidden
 		isKey
 		formatString: 0
+		lineageTag: 4f6c16a5-df46-4216-9981-6b233a5b0344
 		summarizeBy: none
 		sourceColumn: customer_id
 
 	column Customer
 		dataType: string
+		lineageTag: 50ea2e02-44cf-4c69-b75b-44793a1dff18
 		summarizeBy: none
 		sourceColumn: full_name
 
 	column City
 		dataType: string
+		lineageTag: 073b999b-a44f-430b-8966-abe43501e450
 		dataCategory: City
 		summarizeBy: none
 		sourceColumn: city
 
 	column Region
 		dataType: string
+		lineageTag: 431263e1-182a-4943-925e-508200c61420
 		dataCategory: StateOrProvince
 		summarizeBy: none
 		sourceColumn: region
 
 	column Country
 		dataType: string
+		lineageTag: f00b6bb6-ba3f-4948-884f-f7c27f6f151b
 		dataCategory: Country
 		summarizeBy: none
 		sourceColumn: country
@@ -35,6 +41,7 @@ table Customers
 	column 'Signup Date'
 		dataType: dateTime
 		formatString: yyyy-mm-dd
+		lineageTag: 9a7a1d44-340b-418d-b9c7-43edc94e6c14
 		summarizeBy: none
 		sourceColumn: signup_date
 
@@ -42,28 +49,34 @@ table Customers
 	column 'First Order Date'
 		dataType: dateTime
 		formatString: yyyy-mm-dd
+		lineageTag: 6b9343fe-e020-47a4-b8d9-4f48f7fc2f59
 		summarizeBy: none
 		sourceColumn: first_order_date
 
 	column 'Last Order Date'
 		dataType: dateTime
 		formatString: yyyy-mm-dd
+		lineageTag: a4bd661f-2d92-4b34-9051-c8370d9fbd4e
 		summarizeBy: none
 		sourceColumn: last_order_date
 
 	/// new / occasional / regular / vip.
 	column Segment
 		dataType: string
+		lineageTag: cc3b515d-5ccb-4dd6-87c6-bc347ecba637
 		summarizeBy: none
 		sourceColumn: customer_segment
 		sortByColumn: 'Segment Order'
 
-	column 'Segment Order' =
-			SWITCH ( Customers[Segment], "new", 1, "occasional", 2, "regular", 3, "vip", 4, 5 )
+	/// Sort order of Segment. Calculated in Power Query: a DAX calculated column based on
+	/// Segment would create a circular dependency with the sort-by-column setting.
+	column 'Segment Order'
 		dataType: int64
 		isHidden
 		formatString: 0
+		lineageTag: 80c1af0f-089f-471e-a881-d9d746bc1605
 		summarizeBy: none
+		sourceColumn: segment_order
 
 	partition Customers = m
 		mode: import
@@ -79,7 +92,10 @@ table Customers
 				        {"region", type text}, {"country", type text}, {"signup_date", type date},
 				        {"first_order_date", type date}, {"last_order_date", type date},
 				        {"customer_segment", type text}
-				    }, "en-US")
+				    }, "en-US"),
+				    WithOrder = Table.AddColumn(Typed, "segment_order",
+				        each List.PositionOf({"new", "occasional", "regular", "vip"}, [customer_segment]) + 1,
+				        Int64.Type)
 				in
-				    Typed
+				    WithOrder
 
