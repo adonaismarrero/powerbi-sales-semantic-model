@@ -1,0 +1,70 @@
+/// Product dimension (marts.dim_products).
+table Products
+
+	column 'Product ID'
+		dataType: int64
+		isHidden
+		isKey
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: product_id
+
+	column Product
+		dataType: string
+		summarizeBy: none
+		sourceColumn: product_name
+
+	column Category
+		dataType: string
+		summarizeBy: none
+		sourceColumn: category
+
+	/// Current list price per unit (EUR, VAT excluded).
+	column 'Unit Price'
+		dataType: decimal
+		formatString: #,0.00 €
+		summarizeBy: none
+		sourceColumn: unit_price
+
+	column 'Unit Margin %'
+		dataType: double
+		formatString: 0.0%
+		summarizeBy: none
+		sourceColumn: unit_margin_pct
+
+	column 'Price Band'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: price_band
+		sortByColumn: 'Price Band Order'
+
+	column 'Price Band Order' =
+			SWITCH ( Products[Price Band], "0-25", 1, "25-100", 2, "100-300", 3, "300+", 4, 5 )
+		dataType: int64
+		isHidden
+		formatString: 0
+		summarizeBy: none
+
+	column 'Is Active'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		summarizeBy: none
+		sourceColumn: is_active
+
+	partition Products = m
+		mode: import
+		source =
+				let
+				    Source = LoadMart("dim_products"),
+				    Selected = Table.SelectColumns(Source, {
+				        "product_id", "product_name", "category", "unit_price",
+				        "unit_margin_pct", "price_band", "is_active"
+				    }),
+				    Typed = Table.TransformColumnTypes(Selected, {
+				        {"product_id", Int64.Type}, {"product_name", type text}, {"category", type text},
+				        {"unit_price", Currency.Type}, {"unit_margin_pct", type number},
+				        {"price_band", type text}, {"is_active", type logical}
+				    }, "en-US")
+				in
+				    Typed
+

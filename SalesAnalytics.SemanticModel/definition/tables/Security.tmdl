@@ -1,0 +1,33 @@
+/// Mapping user -> regions for dynamic row-level security (role 'Regional Manager').
+/// Demo data inline; in production this table would come from the identity source.
+table Security
+	isHidden
+
+	column 'User Email'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: User Email
+
+	column Region
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: Region
+
+	partition Security = m
+		mode: import
+		source =
+				let
+				    Source = #table(
+				        type table [User Email = text, Region = text],
+				        {
+				            {"manager.madrid@example.com", "Madrid"},
+				            {"manager.catalonia@example.com", "Cataluna"},
+				            {"manager.south@example.com", "Andalucia"},
+				            {"manager.south@example.com", "Comunidad Valenciana"}
+				        }
+				    )
+				in
+				    Source
+

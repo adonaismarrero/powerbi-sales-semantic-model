@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  semantic-model:
+    name: Semantic model (TMDL + DAX checks)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+      - name: Validate model
+        run: dotnet run --project tools/ModelValidator -- SalesAnalytics.SemanticModel/definition
+
+  pbip-files:
+    name: PBIP files are valid JSON
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Parse JSON artifacts
+        run: |
+          for f in SalesAnalytics.pbip SalesAnalytics.SemanticModel/definition.pbism \
+                   SalesAnalytics.Report/definition.pbir SalesAnalytics.Report/report.json; do
+            python3 -m json.tool "$f" > /dev/null && echo "OK  $f"
+          done
+
+  sample-data:
+    name: Sample marts are reproducible
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild from the pipeline repository and compare
+        run: |
+          python scripts/build_sample_marts.py
+          git diff --exit-code -- sample-data

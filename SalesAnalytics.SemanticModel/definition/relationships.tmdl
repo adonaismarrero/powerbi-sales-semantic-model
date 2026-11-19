@@ -1,0 +1,12 @@
+relationship Sales_Date
+	fromColumn: Sales.'Order Date'
+	toColumn: 'Date'.Date
+
+relationship Sales_Customers
+	fromColumn: Sales.'Customer ID'
+	toColumn: Customers.'Customer ID'
+
+relationship Sales_Products
+	fromColumn: Sales.'Product ID'
+	toColumn: Products.'Product ID'
+

@@ -1,0 +1,127 @@
+/// Sales fact at order-line grain (marts.fct_sales). Numeric columns are hidden: use the measures.
+table Sales
+
+	column 'Order Item ID'
+		dataType: int64
+		isHidden
+		isKey
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: order_item_id
+
+	column 'Order ID'
+		dataType: int64
+		isHidden
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: order_id
+
+	column 'Order Date'
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: order_date
+
+	column 'Customer ID'
+		dataType: int64
+		isHidden
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	column 'Product ID'
+		dataType: int64
+		isHidden
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: product_id
+
+	/// Sales channel: web, app or marketplace.
+	column Channel
+		dataType: string
+		summarizeBy: none
+		sourceColumn: channel
+
+	column 'Payment Method'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: payment_method
+
+	/// delivered, shipped, cancelled or returned.
+	column Status
+		dataType: string
+		summarizeBy: none
+		sourceColumn: status
+
+	/// TRUE for delivered and shipped orders. Revenue measures filter on it.
+	column 'Is Revenue'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		summarizeBy: none
+		sourceColumn: is_revenue
+
+	column Quantity
+		dataType: int64
+		isHidden
+		formatString: #,0
+		summarizeBy: sum
+		sourceColumn: quantity
+
+	column 'Gross Amount'
+		dataType: decimal
+		isHidden
+		formatString: #,0.00
+		summarizeBy: sum
+		sourceColumn: gross_amount
+
+	column 'Discount Amount'
+		dataType: decimal
+		isHidden
+		formatString: #,0.00
+		summarizeBy: sum
+		sourceColumn: discount_amount
+
+	column 'Net Amount'
+		dataType: decimal
+		isHidden
+		formatString: #,0.00
+		summarizeBy: sum
+		sourceColumn: net_amount
+
+	column 'Cost Amount'
+		dataType: decimal
+		isHidden
+		formatString: #,0.00
+		summarizeBy: sum
+		sourceColumn: cost_amount
+
+	column 'Margin Amount'
+		dataType: decimal
+		isHidden
+		formatString: #,0.00
+		summarizeBy: sum
+		sourceColumn: margin_amount
+
+	partition Sales = m
+		mode: import
+		source =
+				let
+				    Source = LoadMart("fct_sales"),
+				    Selected = Table.SelectColumns(Source, {
+				        "order_item_id", "order_id", "order_date", "customer_id", "product_id",
+				        "channel", "payment_method", "status", "is_revenue", "quantity",
+				        "gross_amount", "discount_amount", "net_amount", "cost_amount", "margin_amount"
+				    }),
+				    Typed = Table.TransformColumnTypes(Selected, {
+				        {"order_item_id", Int64.Type}, {"order_id", Int64.Type}, {"order_date", type date},
+				        {"customer_id", Int64.Type}, {"product_id", Int64.Type},
+				        {"channel", type text}, {"payment_method", type text}, {"status", type text},
+				        {"is_revenue", type logical}, {"quantity", Int64.Type},
+				        {"gross_amount", Currency.Type}, {"discount_amount", Currency.Type},
+				        {"net_amount", Currency.Type}, {"cost_amount", Currency.Type},
+				        {"margin_amount", Currency.Type}
+				    }, "en-US")
+				in
+				    Typed
+

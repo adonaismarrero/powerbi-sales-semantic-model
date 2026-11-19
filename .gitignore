@@ -1,0 +1,18 @@
+# Power BI Desktop local files (cache with data and per-user settings)
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+*.pbix
+
+# .NET
+bin/
+obj/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

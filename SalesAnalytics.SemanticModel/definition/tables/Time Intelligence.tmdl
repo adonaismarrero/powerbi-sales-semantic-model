@@ -1,0 +1,56 @@
+/// Calculation group: applies the selected time calculation to ANY measure of the model.
+table 'Time Intelligence'
+
+	calculationGroup
+		precedence: 1
+
+		calculationItem Current = SELECTEDMEASURE ()
+
+			ordinal: 0
+
+		calculationItem MTD = CALCULATE ( SELECTEDMEASURE (), DATESMTD ( 'Date'[Date] ) )
+
+			ordinal: 1
+
+		calculationItem YTD = CALCULATE ( SELECTEDMEASURE (), DATESYTD ( 'Date'[Date] ) )
+
+			ordinal: 2
+
+		calculationItem PY = CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+
+			ordinal: 3
+
+		calculationItem YoY =
+				VAR CurrentValue = SELECTEDMEASURE ()
+				VAR PreviousValue =
+				    CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+				RETURN
+				    IF ( NOT ISBLANK ( CurrentValue ) && NOT ISBLANK ( PreviousValue ), CurrentValue - PreviousValue )
+
+			ordinal: 4
+
+		calculationItem 'YoY %' =
+				VAR CurrentValue = SELECTEDMEASURE ()
+				VAR PreviousValue =
+				    CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+				RETURN
+				    IF ( NOT ISBLANK ( CurrentValue ), DIVIDE ( CurrentValue - PreviousValue, PreviousValue ) )
+
+			ordinal: 5
+			formatStringDefinition = "0.0%"
+
+	column 'Time Calculation'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Name
+		sortByColumn: Ordinal
+
+	column Ordinal
+		dataType: int64
+		isHidden
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: Ordinal
+
+	partition 'Time Intelligence' = calculationGroup
+

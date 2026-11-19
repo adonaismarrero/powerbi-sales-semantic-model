@@ -1,0 +1,801 @@
+customer_id,full_name,email,city,region,country,signup_date,first_order_date,last_order_date,lifetime_orders,lifetime_revenue,customer_segment
+1,Mateo Garcia,mateo.garcia1@example.com,A Coruna,Galicia,ES,2023-03-26,2024-02-22,2025-11-17,10,3515.40,vip
+2,Marcos Navarro,marcos.navarro2@example.com,A Coruna,Galicia,ES,2023-10-04,2024-04-28,2025-12-27,6,1021.03,regular
+3,Daniel Romero,daniel.romero3@example.com,Tarragona,Cataluna,ES,2022-04-25,2024-02-01,2025-06-03,8,2264.83,regular
+4,Javier Diaz,javier.diaz4@example.com,A Coruna,Galicia,ES,2023-05-21,2024-01-09,2025-12-07,9,2786.23,regular
+5,Alba Diaz,alba.diaz5@example.com,Girona,Cataluna,ES,2023-01-18,2024-05-22,2025-04-10,5,1653.08,regular
+6,Martina Hernandez,martina.hernandez6@example.com,Alcala de Henares,Madrid,ES,2023-09-24,2024-06-26,2024-08-22,2,574.28,occasional
+7,Marcos Moreno,marcos.moreno7@example.com,Madrid,Madrid,ES,2022-07-01,2024-02-22,2025-11-16,6,2428.25,regular
+8,Pablo Dominguez,pablo.dominguez8@example.com,Toledo,Castilla-La Mancha,ES,2022-12-27,2024-08-04,2025-08-31,9,5619.25,vip
+9,Daniel Martin,daniel.martin9@example.com,Vigo,Galicia,ES,2023-10-12,2024-06-28,2025-11-05,7,1932.37,regular
+10,Elena Ruiz,elena.ruiz10@example.com,Malaga,Andalucia,ES,2023-07-19,2024-04-10,2025-10-24,7,1853.16,regular
+11,Bruno Gonzalez,bruno.gonzalez11@example.com,A Coruna,Galicia,ES,2022-04-18,2024-04-05,2025-12-09,7,4068.94,vip
+12,Elena Hernandez,elena.hernandez12@example.com,Tarragona,Cataluna,ES,2023-03-31,2024-02-18,2025-12-16,15,3560.80,vip
+13,Bruno Jimenez,bruno.jimenez13@example.com,Granada,Andalucia,ES,2023-11-05,2024-04-12,2025-11-25,7,3474.54,vip
+14,Paula Gonzalez,paula.gonzalez14@example.com,Castellon,Comunidad Valenciana,ES,2023-05-30,2024-07-26,2025-11-11,11,3284.77,vip
+15,Valeria Alvarez,valeria.alvarez15@example.com,Sevilla,Andalucia,ES,2022-11-22,2024-03-17,2025-12-23,11,3741.80,vip
+16,Sofia Perez,sofia.perez16@example.com,Malaga,Andalucia,ES,2022-06-06,2024-05-18,2025-11-16,4,1194.46,occasional
+17,Carmen Ruiz,carmen.ruiz17@example.com,Albacete,Castilla-La Mancha,ES,2023-05-22,2024-06-30,2025-12-26,8,1826.54,regular
+18,Hugo Fernandez,hugo.fernandez18@example.com,Alcala de Henares,Madrid,ES,2023-07-29,2024-05-02,2025-10-02,8,2024.65,regular
+19,Martina Hernandez,martina.hernandez19@example.com,Albacete,Castilla-La Mancha,ES,2022-12-07,2024-05-11,2025-09-12,5,2425.10,regular
+20,Lucia Fernandez,lucia.fernandez20@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-02-02,2024-02-22,2025-03-28,4,837.25,occasional
+21,Mateo Martin,mateo.martin21@example.com,Granada,Andalucia,ES,2022-10-13,2024-06-28,2025-05-17,4,1766.31,occasional
+22,Paula Romero,paula.romero22@example.com,Santiago,Galicia,ES,2023-07-03,2024-06-08,2025-12-23,5,1615.70,regular
+23,Noa Romero,noa.romero23@example.com,Sevilla,Andalucia,ES,2022-04-18,2024-09-27,2025-09-14,8,2862.71,regular
+24,Irene Garcia,irene.garcia24@example.com,Albacete,Castilla-La Mancha,ES,2022-04-28,2024-04-16,2025-11-27,10,3589.28,vip
+25,Daniel Rodriguez,daniel.rodriguez25@example.com,Sevilla,Andalucia,ES,2023-04-30,2024-02-11,2025-12-08,3,513.81,occasional
+26,Mario Gonzalez,mario.gonzalez26@example.com,Vigo,Galicia,ES,2022-07-05,2024-02-07,2025-12-12,6,2654.39,regular
+27,Leo Gomez,leo.gomez27@example.com,Toledo,Castilla-La Mancha,ES,2022-07-10,2024-02-22,2025-10-25,8,2134.72,regular
+28,Marcos Sanchez,marcos.sanchez28@example.com,Albacete,Castilla-La Mancha,ES,2023-02-16,2024-01-08,2025-11-03,6,1253.04,regular
+29,Irene Moreno,irene.moreno29@example.com,Valencia,Comunidad Valenciana,ES,2023-08-31,2024-05-10,2025-12-09,4,3388.54,vip
+30,Javier Perez,javier.perez30@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-05-09,2024-07-08,2025-11-09,6,2571.64,regular
+31,Daniel Gonzalez,daniel.gonzalez31@example.com,Madrid,Madrid,ES,2023-11-30,2024-05-15,2025-12-22,7,3234.93,vip
+32,Bruno Alvarez,bruno.alvarez32@example.com,Granada,Andalucia,ES,2023-05-27,2024-05-12,2025-06-14,5,1705.98,regular
+33,Mario Perez,mario.perez33@example.com,Santiago,Galicia,ES,2022-09-04,2024-04-07,2025-10-30,9,4200.20,vip
+34,Diego Ruiz,diego.ruiz34@example.com,A Coruna,Galicia,ES,2022-10-25,2024-01-10,2025-07-18,6,1616.43,regular
+35,Noa Fernandez,noa.fernandez35@example.com,A Coruna,Galicia,ES,2023-10-31,2024-03-03,2025-11-21,6,2158.93,regular
+36,Valeria Sanchez,valeria.sanchez36@example.com,Girona,Cataluna,ES,2022-07-01,2024-08-08,2025-11-11,7,2417.58,regular
+37,Daniel Gonzalez,daniel.gonzalez37@example.com,Valencia,Comunidad Valenciana,ES,2022-10-05,2024-07-24,2025-12-25,7,1624.65,regular
+38,Noa Navarro,noa.navarro38@example.com,Madrid,Madrid,ES,2023-12-17,2024-01-11,2025-08-21,8,1378.77,regular
+39,Diego Alvarez,diego.alvarez39@example.com,Barcelona,Cataluna,ES,2022-08-27,2025-02-22,2025-12-27,5,1462.26,regular
+40,Carmen Garcia,carmen.garcia40@example.com,Girona,Cataluna,ES,2022-11-28,2024-05-16,2025-12-24,5,1005.98,regular
+41,Diego Navarro,diego.navarro41@example.com,Malaga,Andalucia,ES,2022-02-23,2024-06-24,2025-11-05,7,2455.95,regular
+42,Hugo Torres,hugo.torres42@example.com,Barcelona,Cataluna,ES,2022-06-25,2024-03-31,2025-12-05,8,4326.06,vip
+43,Mario Romero,mario.romero43@example.com,Toledo,Castilla-La Mancha,ES,2022-07-07,2024-05-16,2024-11-27,4,1187.41,occasional
+44,Martina Dominguez,martina.dominguez44@example.com,Barcelona,Cataluna,ES,2023-10-24,2024-02-06,2025-12-09,11,2666.38,regular
+45,Daniel Torres,daniel.torres45@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-05-03,2024-01-14,2025-06-30,10,2491.51,regular
+46,Sara Romero,sara.romero46@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-02-12,2024-02-06,2025-12-29,10,3299.00,vip
+47,Daniel Gomez,daniel.gomez47@example.com,Malaga,Andalucia,ES,2022-11-22,2024-04-18,2025-04-08,10,3797.32,vip
+48,Martina Garcia,martina.garcia48@example.com,Sevilla,Andalucia,ES,2022-09-19,2024-09-30,2025-12-20,8,2382.07,regular
+49,Javier Sanchez,javier.sanchez49@example.com,Madrid,Madrid,ES,2022-08-01,2024-05-15,2025-12-19,6,2148.86,regular
+50,Alvaro Martin,alvaro.martin50@example.com,Girona,Cataluna,ES,2023-07-24,2024-08-13,2025-05-15,5,846.87,regular
+51,Noa Romero,noa.romero51@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-12-24,2024-02-02,2025-03-06,5,2570.48,regular
+52,Sofia Gomez,sofia.gomez52@example.com,Madrid,Madrid,ES,2023-09-05,2024-06-10,2025-12-14,8,2977.87,regular
+53,Pablo Dominguez,pablo.dominguez53@example.com,Granada,Andalucia,ES,2023-05-31,2024-01-26,2025-12-18,9,3559.86,vip
+54,Irene Alvarez,irene.alvarez54@example.com,Sevilla,Andalucia,ES,2023-04-19,2024-05-01,2025-10-18,11,3334.01,vip
+55,Diego Gomez,diego.gomez55@example.com,Santiago,Galicia,ES,2023-11-17,2024-03-14,2025-09-12,10,3621.83,vip
+56,Leo Moreno,leo.moreno56@example.com,Sevilla,Andalucia,ES,2022-06-16,2025-02-03,2025-12-29,4,1407.56,occasional
+57,Alba Lopez,alba.lopez57@example.com,Getafe,Madrid,ES,2022-06-22,2024-01-12,2025-11-14,10,4779.01,vip
+58,Diego Lopez,diego.lopez58@example.com,Barcelona,Cataluna,ES,2023-11-20,2024-08-23,2025-10-18,10,2689.85,regular
+59,Valeria Perez,valeria.perez59@example.com,Malaga,Andalucia,ES,2022-02-18,2024-11-05,2025-12-07,7,1793.82,regular
+60,Marcos Lopez,marcos.lopez60@example.com,Toledo,Castilla-La Mancha,ES,2023-05-04,2024-02-25,2025-10-19,8,2445.07,regular
+61,Lucia Martinez,lucia.martinez61@example.com,Castellon,Comunidad Valenciana,ES,2023-01-26,2024-08-03,2025-12-15,8,4380.16,vip
+62,Daniel Gomez,daniel.gomez62@example.com,A Coruna,Galicia,ES,2023-07-22,2024-06-04,2025-10-16,6,1872.83,regular
+63,Daniel Sanchez,daniel.sanchez63@example.com,Valencia,Comunidad Valenciana,ES,2022-09-17,2024-08-01,2025-12-01,8,1386.69,regular
+64,Lucia Sanchez,lucia.sanchez64@example.com,Girona,Cataluna,ES,2022-11-19,2024-01-22,2024-02-26,2,1121.10,occasional
+65,Noa Romero,noa.romero65@example.com,Malaga,Andalucia,ES,2022-11-18,2024-03-28,2025-08-19,10,3855.61,vip
+66,Mateo Gomez,mateo.gomez66@example.com,Madrid,Madrid,ES,2023-07-03,2024-09-18,2025-12-25,8,2562.74,regular
+67,Adrian Diaz,adrian.diaz67@example.com,Getafe,Madrid,ES,2023-01-13,2025-05-10,2025-10-23,3,767.52,occasional
+68,Mateo Hernandez,mateo.hernandez68@example.com,Albacete,Castilla-La Mancha,ES,2022-05-21,2024-05-04,2025-10-06,6,1959.06,regular
+69,Irene Navarro,irene.navarro69@example.com,Getafe,Madrid,ES,2022-01-28,2024-03-05,2025-12-18,11,2771.12,regular
+70,Alvaro Diaz,alvaro.diaz70@example.com,Tarragona,Cataluna,ES,2023-10-22,2024-07-08,2025-12-03,5,1126.67,regular
+71,Bruno Fernandez,bruno.fernandez71@example.com,Malaga,Andalucia,ES,2023-02-28,2024-01-21,2025-11-23,10,3454.29,vip
+72,Alba Martin,alba.martin72@example.com,Alicante,Comunidad Valenciana,ES,2022-06-13,2024-05-10,2025-11-16,4,1879.92,occasional
+73,Marcos Martinez,marcos.martinez73@example.com,A Coruna,Galicia,ES,2022-04-11,2024-12-19,2025-11-10,5,2621.86,regular
+74,Pablo Sanchez,pablo.sanchez74@example.com,Barcelona,Cataluna,ES,2022-10-18,2024-01-24,2025-08-30,6,1886.80,regular
+75,Elena Moreno,elena.moreno75@example.com,Castellon,Comunidad Valenciana,ES,2022-02-09,2024-06-15,2025-04-22,6,1593.21,regular
+76,Bruno Gonzalez,bruno.gonzalez76@example.com,Girona,Cataluna,ES,2023-03-17,2024-05-29,2025-12-27,8,2678.97,regular
+77,Daniel Martin,daniel.martin77@example.com,Madrid,Madrid,ES,2023-05-16,2024-01-08,2025-12-05,7,2779.17,regular
+78,Mario Dominguez,mario.dominguez78@example.com,Tarragona,Cataluna,ES,2023-10-19,2025-01-04,2025-11-27,5,2301.89,regular
+79,Alba Hernandez,alba.hernandez79@example.com,Tarragona,Cataluna,ES,2022-08-13,2024-01-01,2025-11-19,9,4115.66,vip
+80,Mateo Diaz,mateo.diaz80@example.com,Getafe,Madrid,ES,2023-05-22,2024-05-05,2025-09-08,4,2287.96,occasional
+81,Hugo Navarro,hugo.navarro81@example.com,Valencia,Comunidad Valenciana,ES,2023-04-21,2024-02-11,2025-12-18,10,3251.57,vip
+82,Bruno Romero,bruno.romero82@example.com,Alicante,Comunidad Valenciana,ES,2022-06-08,2024-03-18,2025-11-28,8,3780.20,vip
+83,Marcos Romero,marcos.romero83@example.com,Alcala de Henares,Madrid,ES,2022-10-22,2024-09-22,2025-05-02,5,1137.17,regular
+84,Mario Moreno,mario.moreno84@example.com,Vigo,Galicia,ES,2023-04-11,2024-03-30,2025-09-27,6,1608.45,regular
+85,Mario Perez,mario.perez85@example.com,Toledo,Castilla-La Mancha,ES,2023-03-26,2024-03-08,2025-10-13,10,3417.85,vip
+86,Julia Jimenez,julia.jimenez86@example.com,Malaga,Andalucia,ES,2022-06-27,2024-07-21,2025-09-28,11,7284.22,vip
+87,Sofia Sanchez,sofia.sanchez87@example.com,Vigo,Galicia,ES,2023-10-28,2024-05-08,2025-08-12,6,1722.11,regular
+88,Hugo Sanchez,hugo.sanchez88@example.com,Castellon,Comunidad Valenciana,ES,2022-10-28,2024-08-02,2025-11-15,8,3469.24,vip
+89,Sara Hernandez,sara.hernandez89@example.com,Alcala de Henares,Madrid,ES,2022-08-31,2024-02-25,2025-12-22,15,4463.66,vip
+90,Javier Navarro,javier.navarro90@example.com,Alicante,Comunidad Valenciana,ES,2022-04-24,2025-02-18,2025-06-17,2,1383.83,occasional
+91,Mario Garcia,mario.garcia91@example.com,Alicante,Comunidad Valenciana,ES,2022-11-29,2024-04-12,2025-12-07,7,778.15,regular
+92,Leo Moreno,leo.moreno92@example.com,Vigo,Galicia,ES,2023-08-24,2024-06-08,2025-11-29,8,2432.52,regular
+93,Sara Garcia,sara.garcia93@example.com,Albacete,Castilla-La Mancha,ES,2023-10-08,2024-01-19,2025-11-01,6,2194.99,regular
+94,Hugo Gomez,hugo.gomez94@example.com,Girona,Cataluna,ES,2022-12-09,2024-01-29,2025-08-23,6,1644.37,regular
+95,Paula Diaz,paula.diaz95@example.com,Castellon,Comunidad Valenciana,ES,2023-04-18,2024-04-16,2025-11-15,5,1211.22,regular
+96,Hugo Ruiz,hugo.ruiz96@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-05-17,2024-12-26,2025-11-13,4,387.04,occasional
+97,Lucia Perez,lucia.perez97@example.com,Madrid,Madrid,ES,2023-06-11,2024-02-22,2025-09-11,6,1844.16,regular
+98,Mario Fernandez,mario.fernandez98@example.com,Girona,Cataluna,ES,2022-06-03,2024-03-06,2025-10-22,7,2871.20,regular
+99,Leo Dominguez,leo.dominguez99@example.com,Sevilla,Andalucia,ES,2022-04-20,2024-02-07,2025-12-01,5,913.81,regular
+100,Mateo Torres,mateo.torres100@example.com,Malaga,Andalucia,ES,2023-12-06,2024-03-07,2025-09-05,6,2781.01,regular
+101,Alba Sanchez,alba.sanchez101@example.com,Valencia,Comunidad Valenciana,ES,2023-10-16,2024-05-02,2025-10-24,8,1687.56,regular
+102,Alba Martin,alba.martin102@example.com,Getafe,Madrid,ES,2022-01-31,2024-03-01,2025-12-27,8,2641.98,regular
+103,Alvaro Navarro,alvaro.navarro103@example.com,Getafe,Madrid,ES,2022-10-20,2024-04-03,2025-10-06,6,1811.62,regular
+104,Lucia Diaz,lucia.diaz104@example.com,Granada,Andalucia,ES,2022-08-18,2024-08-18,2025-11-15,3,1654.18,occasional
+105,Alba Lopez,alba.lopez105@example.com,Castellon,Comunidad Valenciana,ES,2022-10-13,2024-02-11,2025-11-07,10,4339.22,vip
+106,Adrian Navarro,adrian.navarro106@example.com,Granada,Andalucia,ES,2022-08-24,2024-01-28,2025-12-07,9,4680.31,vip
+107,Julia Perez,julia.perez107@example.com,Malaga,Andalucia,ES,2023-10-05,2024-02-16,2025-12-24,9,4413.64,vip
+108,Adrian Hernandez,adrian.hernandez108@example.com,Toledo,Castilla-La Mancha,ES,2023-01-22,2024-05-11,2025-07-10,6,1682.33,regular
+109,Valeria Ruiz,valeria.ruiz109@example.com,Castellon,Comunidad Valenciana,ES,2023-04-12,2024-01-13,2025-05-07,5,811.76,regular
+110,Javier Garcia,javier.garcia110@example.com,Granada,Andalucia,ES,2022-07-21,2024-01-06,2025-12-21,9,4983.61,vip
+111,Mario Navarro,mario.navarro111@example.com,Alicante,Comunidad Valenciana,ES,2023-04-30,2024-07-10,2025-12-06,9,3201.94,vip
+112,Lucia Gonzalez,lucia.gonzalez112@example.com,Alicante,Comunidad Valenciana,ES,2023-03-06,2024-11-19,2025-09-15,9,4879.05,vip
+113,Sara Ruiz,sara.ruiz113@example.com,Santiago,Galicia,ES,2022-09-04,2024-04-07,2025-03-19,3,494.25,occasional
+114,Julia Ruiz,julia.ruiz114@example.com,Toledo,Castilla-La Mancha,ES,2022-01-12,2024-04-20,2025-06-29,9,2283.53,regular
+115,Marcos Sanchez,marcos.sanchez115@example.com,Getafe,Madrid,ES,2023-02-12,2024-02-20,2025-11-30,4,1613.35,occasional
+116,Valeria Sanchez,valeria.sanchez116@example.com,Tarragona,Cataluna,ES,2022-08-24,2024-01-08,2025-09-25,6,3094.83,vip
+117,Pablo Fernandez,pablo.fernandez117@example.com,Albacete,Castilla-La Mancha,ES,2023-06-17,2024-02-02,2025-04-14,5,2606.97,regular
+118,Alba Navarro,alba.navarro118@example.com,Getafe,Madrid,ES,2023-08-25,2025-07-09,2025-10-20,3,615.85,occasional
+119,Alba Lopez,alba.lopez119@example.com,Sevilla,Andalucia,ES,2022-03-19,2024-12-07,2025-07-13,2,4448.49,vip
+120,Pablo Alvarez,pablo.alvarez120@example.com,Toledo,Castilla-La Mancha,ES,2022-08-29,2024-02-07,2025-10-13,10,3217.17,vip
+121,Mario Fernandez,mario.fernandez121@example.com,Granada,Andalucia,ES,2023-10-27,2024-02-12,2025-12-09,10,4617.35,vip
+122,Hugo Lopez,hugo.lopez122@example.com,A Coruna,Galicia,ES,2023-08-02,2024-01-19,2025-07-25,9,2618.50,regular
+123,Mateo Navarro,mateo.navarro123@example.com,Barcelona,Cataluna,ES,2022-11-01,2024-07-08,2025-10-22,3,1353.10,occasional
+124,Carmen Moreno,carmen.moreno124@example.com,Albacete,Castilla-La Mancha,ES,2022-10-05,2024-02-03,2025-11-13,8,4925.13,vip
+125,Sara Dominguez,sara.dominguez125@example.com,Santiago,Galicia,ES,2023-11-01,2024-03-24,2025-12-16,5,4728.97,vip
+126,Valeria Gomez,valeria.gomez126@example.com,Santiago,Galicia,ES,2022-02-24,2024-01-24,2025-12-02,11,3317.93,vip
+127,Leo Garcia,leo.garcia127@example.com,Alcala de Henares,Madrid,ES,2022-11-09,2024-02-29,2025-10-31,9,2354.59,regular
+128,Daniel Martin,daniel.martin128@example.com,Getafe,Madrid,ES,2023-03-18,2024-05-22,2025-11-07,5,3614.62,vip
+129,Paula Torres,paula.torres129@example.com,Barcelona,Cataluna,ES,2022-02-23,2024-03-23,2025-09-13,6,3152.35,vip
+130,Daniel Lopez,daniel.lopez130@example.com,Toledo,Castilla-La Mancha,ES,2023-04-04,2024-09-06,2024-09-15,2,1255.85,occasional
+131,Adrian Torres,adrian.torres131@example.com,Malaga,Andalucia,ES,2023-03-12,2024-01-18,2025-10-01,7,1628.62,regular
+132,Carmen Gomez,carmen.gomez132@example.com,Santiago,Galicia,ES,2022-08-07,2024-04-07,2025-08-23,6,2760.18,regular
+133,Diego Jimenez,diego.jimenez133@example.com,Getafe,Madrid,ES,2022-04-23,2024-01-16,2025-11-08,5,1753.10,regular
+134,Sara Garcia,sara.garcia134@example.com,Toledo,Castilla-La Mancha,ES,2022-02-12,2024-07-03,2025-10-28,7,1152.23,regular
+135,Irene Moreno,irene.moreno135@example.com,Castellon,Comunidad Valenciana,ES,2023-03-23,2024-03-05,2025-04-10,8,3498.10,vip
+136,Martina Alvarez,martina.alvarez136@example.com,Valencia,Comunidad Valenciana,ES,2023-01-10,2024-10-03,2025-12-19,12,3973.10,vip
+137,Julia Diaz,julia.diaz137@example.com,Girona,Cataluna,ES,2022-01-21,2025-03-02,2025-06-29,2,553.62,occasional
+138,Hugo Moreno,hugo.moreno138@example.com,Albacete,Castilla-La Mancha,ES,2023-10-03,2024-07-01,2025-09-15,5,1580.17,regular
+139,Lucia Navarro,lucia.navarro139@example.com,Albacete,Castilla-La Mancha,ES,2022-09-15,2024-03-03,2025-12-15,8,1464.42,regular
+140,Mario Moreno,mario.moreno140@example.com,Albacete,Castilla-La Mancha,ES,2023-11-10,2024-11-29,2025-11-09,5,1208.20,regular
+141,Alba Alvarez,alba.alvarez141@example.com,Valencia,Comunidad Valenciana,ES,2023-08-30,2024-03-17,2025-11-13,6,1462.42,regular
+142,Leo Martin,leo.martin142@example.com,A Coruna,Galicia,ES,2022-06-16,2024-06-19,2025-09-14,6,2484.88,regular
+143,Elena Fernandez,elena.fernandez143@example.com,Getafe,Madrid,ES,2022-03-09,2024-10-21,2025-10-03,7,2011.89,regular
+144,Irene Gomez,irene.gomez144@example.com,Sevilla,Andalucia,ES,2022-11-02,2024-03-05,2025-11-01,8,3669.56,vip
+145,Javier Lopez,javier.lopez145@example.com,Castellon,Comunidad Valenciana,ES,2022-12-05,2024-01-04,2025-12-19,11,5009.96,vip
+146,Martina Gomez,martina.gomez146@example.com,Girona,Cataluna,ES,2022-11-03,2024-02-11,2025-12-22,5,1807.73,regular
+147,Pablo Martin,pablo.martin147@example.com,Madrid,Madrid,ES,2022-05-10,2024-04-18,2025-12-16,11,5216.18,vip
+148,Javier Alvarez,javier.alvarez148@example.com,Alicante,Comunidad Valenciana,ES,2023-01-13,2024-03-23,2025-10-29,7,2884.77,regular
+149,Julia Sanchez,julia.sanchez149@example.com,Alicante,Comunidad Valenciana,ES,2022-01-17,2024-02-27,2025-09-05,8,2392.58,regular
+150,Julia Alvarez,julia.alvarez150@example.com,Sevilla,Andalucia,ES,2022-12-07,2024-06-22,2025-12-01,8,3254.72,vip
+151,Mario Rodriguez,mario.rodriguez151@example.com,Barcelona,Cataluna,ES,2023-08-25,2024-01-14,2025-12-02,7,2916.31,regular
+152,Mateo Romero,mateo.romero152@example.com,Castellon,Comunidad Valenciana,ES,2022-09-21,2024-03-22,2025-07-02,7,1114.94,regular
+153,Martina Alvarez,martina.alvarez153@example.com,Tarragona,Cataluna,ES,2023-04-05,2024-01-21,2025-12-10,11,2478.91,regular
+154,Julia Navarro,julia.navarro154@example.com,Alcala de Henares,Madrid,ES,2022-12-08,2024-02-16,2025-12-09,5,1904.49,regular
+155,Hugo Dominguez,hugo.dominguez155@example.com,Albacete,Castilla-La Mancha,ES,2023-10-23,2024-02-21,2024-10-31,4,1692.78,occasional
+156,Marcos Gonzalez,marcos.gonzalez156@example.com,Tarragona,Cataluna,ES,2022-10-14,2024-09-17,2025-12-17,6,1536.36,regular
+157,Elena Martinez,elena.martinez157@example.com,Alcala de Henares,Madrid,ES,2022-01-21,2025-02-28,2025-10-21,2,1573.10,occasional
+158,Pablo Ruiz,pablo.ruiz158@example.com,Alcala de Henares,Madrid,ES,2022-12-14,2025-01-11,2025-12-23,3,431.55,occasional
+159,Bruno Martinez,bruno.martinez159@example.com,Albacete,Castilla-La Mancha,ES,2023-07-11,2024-04-04,2025-12-28,7,2628.12,regular
+160,Bruno Perez,bruno.perez160@example.com,Albacete,Castilla-La Mancha,ES,2022-08-10,2024-10-06,2025-09-04,7,2432.42,regular
+161,Paula Moreno,paula.moreno161@example.com,Vigo,Galicia,ES,2023-04-15,2024-05-31,2025-10-26,3,341.52,occasional
+162,Bruno Navarro,bruno.navarro162@example.com,Granada,Andalucia,ES,2023-07-24,2024-03-06,2025-12-29,6,3662.56,vip
+163,Noa Diaz,noa.diaz163@example.com,Sevilla,Andalucia,ES,2022-01-25,2024-02-05,2025-11-11,7,3483.24,vip
+164,Mario Fernandez,mario.fernandez164@example.com,Alicante,Comunidad Valenciana,ES,2023-05-04,2024-08-12,2025-12-28,7,3940.02,vip
+165,Pablo Garcia,pablo.garcia165@example.com,Santiago,Galicia,ES,2022-02-26,2024-10-01,2025-02-15,4,1406.49,occasional
+166,Hugo Dominguez,hugo.dominguez166@example.com,A Coruna,Galicia,ES,2022-08-11,2024-01-07,2025-10-06,3,833.16,occasional
+167,Alvaro Perez,alvaro.perez167@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-03-21,2024-05-16,2025-05-16,7,1218.64,regular
+168,Bruno Lopez,bruno.lopez168@example.com,A Coruna,Galicia,ES,2022-03-29,2024-05-15,2025-12-06,9,3351.09,vip
+169,Elena Rodriguez,elena.rodriguez169@example.com,Malaga,Andalucia,ES,2022-05-18,2024-04-18,2025-11-19,10,4073.29,vip
+170,Marcos Diaz,marcos.diaz170@example.com,Malaga,Andalucia,ES,2023-07-06,2024-12-18,2025-12-12,5,645.09,regular
+171,Irene Gomez,irene.gomez171@example.com,Albacete,Castilla-La Mancha,ES,2023-07-17,2024-04-03,2025-11-07,6,1277.64,regular
+172,Marcos Jimenez,marcos.jimenez172@example.com,Sevilla,Andalucia,ES,2023-09-06,2024-05-08,2025-12-07,6,1822.38,regular
+173,Marcos Hernandez,marcos.hernandez173@example.com,A Coruna,Galicia,ES,2022-06-10,2024-03-23,2025-12-12,12,5738.15,vip
+174,Javier Fernandez,javier.fernandez174@example.com,Malaga,Andalucia,ES,2022-09-23,2025-03-22,2025-06-22,3,821.46,occasional
+175,Carmen Ruiz,carmen.ruiz175@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-09-13,2024-09-22,2025-10-24,5,1455.09,regular
+176,Julia Dominguez,julia.dominguez176@example.com,Albacete,Castilla-La Mancha,ES,2023-05-20,2025-05-09,2025-05-09,1,89.94,occasional
+177,Pablo Diaz,pablo.diaz177@example.com,Vigo,Galicia,ES,2023-09-04,2024-04-29,2025-08-11,5,602.52,regular
+178,Mateo Fernandez,mateo.fernandez178@example.com,Alicante,Comunidad Valenciana,ES,2023-05-06,2024-03-26,2025-10-15,6,1661.68,regular
+179,Bruno Navarro,bruno.navarro179@example.com,Malaga,Andalucia,ES,2022-10-29,2024-02-14,2025-11-23,7,2601.97,regular
+180,Mateo Alvarez,mateo.alvarez180@example.com,A Coruna,Galicia,ES,2022-04-11,2024-01-24,2025-10-15,7,2731.51,regular
+181,Alvaro Sanchez,alvaro.sanchez181@example.com,Vigo,Galicia,ES,2022-10-04,2024-08-10,2025-10-14,8,2610.21,regular
+182,Bruno Ruiz,bruno.ruiz182@example.com,Madrid,Madrid,ES,2022-06-23,2024-03-07,2025-12-05,9,3369.77,vip
+183,Paula Sanchez,paula.sanchez183@example.com,Valencia,Comunidad Valenciana,ES,2023-08-29,2024-02-22,2025-12-24,12,3664.03,vip
+184,Valeria Dominguez,valeria.dominguez184@example.com,A Coruna,Galicia,ES,2023-12-11,2024-04-13,2025-10-17,5,727.83,regular
+185,Valeria Gonzalez,valeria.gonzalez185@example.com,Toledo,Castilla-La Mancha,ES,2022-06-13,2024-01-01,2025-11-24,13,4752.34,vip
+186,Sofia Dominguez,sofia.dominguez186@example.com,Sevilla,Andalucia,ES,2023-12-30,2024-06-02,2025-12-09,9,5522.69,vip
+187,Paula Martinez,paula.martinez187@example.com,Toledo,Castilla-La Mancha,ES,2023-09-11,2024-03-17,2025-12-11,7,2901.81,regular
+188,Daniel Torres,daniel.torres188@example.com,Sevilla,Andalucia,ES,2023-02-04,2024-06-24,2025-08-27,4,1102.72,occasional
+189,Diego Romero,diego.romero189@example.com,Vigo,Galicia,ES,2023-09-07,2025-08-09,2025-09-14,2,635.84,occasional
+190,Sara Fernandez,sara.fernandez190@example.com,Toledo,Castilla-La Mancha,ES,2022-09-26,2024-09-25,2025-12-02,9,2296.57,regular
+191,Bruno Romero,bruno.romero191@example.com,A Coruna,Galicia,ES,2023-02-27,2024-01-03,2025-11-12,13,2275.28,vip
+192,Carmen Diaz,carmen.diaz192@example.com,Alicante,Comunidad Valenciana,ES,2022-01-29,2024-03-14,2025-10-29,12,3502.48,vip
+193,Martina Jimenez,martina.jimenez193@example.com,Getafe,Madrid,ES,2022-04-19,2024-01-20,2025-10-17,10,3824.87,vip
+194,Sara Navarro,sara.navarro194@example.com,Vigo,Galicia,ES,2023-02-03,2024-03-15,2025-12-05,12,3458.88,vip
+195,Irene Dominguez,irene.dominguez195@example.com,Castellon,Comunidad Valenciana,ES,2022-10-18,2024-01-02,2025-09-11,12,4273.40,vip
+196,Javier Sanchez,javier.sanchez196@example.com,Vigo,Galicia,ES,2022-10-18,2024-08-02,2025-05-20,4,1595.52,occasional
+197,Carmen Diaz,carmen.diaz197@example.com,Girona,Cataluna,ES,2023-09-26,2024-06-21,2025-09-02,5,1089.19,regular
+198,Sofia Alvarez,sofia.alvarez198@example.com,Malaga,Andalucia,ES,2023-10-25,2024-10-01,2025-12-25,7,1599.78,regular
+199,Marcos Ruiz,marcos.ruiz199@example.com,Getafe,Madrid,ES,2023-08-21,2024-03-21,2025-11-29,8,3332.66,vip
+200,Julia Fernandez,julia.fernandez200@example.com,Albacete,Castilla-La Mancha,ES,2022-11-07,2024-01-22,2025-11-20,8,1132.55,regular
+201,Hugo Martin,hugo.martin201@example.com,Santiago,Galicia,ES,2022-04-27,2024-09-30,2025-12-02,7,2905.42,regular
+202,Sofia Alvarez,sofia.alvarez202@example.com,Tarragona,Cataluna,ES,2023-05-17,2024-05-31,2025-08-29,9,1764.03,regular
+203,Mateo Gomez,mateo.gomez203@example.com,Granada,Andalucia,ES,2022-05-24,2025-03-13,2025-08-28,2,1168.03,occasional
+204,Adrian Navarro,adrian.navarro204@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-12-06,2024-06-21,2025-12-12,7,2763.85,regular
+205,Lucia Martinez,lucia.martinez205@example.com,Malaga,Andalucia,ES,2023-03-28,2024-11-14,2025-08-11,4,1118.71,occasional
+206,Lucia Martinez,lucia.martinez206@example.com,Sevilla,Andalucia,ES,2023-08-08,2024-03-09,2025-05-11,8,2242.11,regular
+207,Noa Garcia,noa.garcia207@example.com,Vigo,Galicia,ES,2023-09-30,2024-04-01,2025-11-23,10,3448.79,vip
+208,Julia Martinez,julia.martinez208@example.com,Castellon,Comunidad Valenciana,ES,2022-12-19,2024-03-10,2025-12-13,6,4806.86,vip
+209,Martina Rodriguez,martina.rodriguez209@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-07-26,2024-01-17,2025-09-20,7,3974.55,vip
+210,Paula Moreno,paula.moreno210@example.com,Alcala de Henares,Madrid,ES,2022-02-23,2024-04-21,2025-09-03,8,3643.48,vip
+211,Valeria Romero,valeria.romero211@example.com,Granada,Andalucia,ES,2023-09-07,2024-03-22,2025-09-08,9,3861.64,vip
+212,Sara Alvarez,sara.alvarez212@example.com,Vigo,Galicia,ES,2022-07-11,2024-04-15,2025-11-30,10,3790.05,vip
+213,Hugo Garcia,hugo.garcia213@example.com,Toledo,Castilla-La Mancha,ES,2023-06-06,2024-04-02,2025-10-15,10,3989.35,vip
+214,Pablo Jimenez,pablo.jimenez214@example.com,Sevilla,Andalucia,ES,2023-09-01,2024-10-24,2025-09-08,5,1258.58,regular
+215,Carmen Navarro,carmen.navarro215@example.com,Tarragona,Cataluna,ES,2022-01-11,2025-01-05,2025-09-19,6,1359.30,regular
+216,Martina Hernandez,martina.hernandez216@example.com,Sevilla,Andalucia,ES,2023-11-19,2024-01-16,2025-12-21,16,4059.94,vip
+217,Sara Diaz,sara.diaz217@example.com,Malaga,Andalucia,ES,2022-05-24,2024-10-29,2025-12-26,6,2316.32,regular
+218,Carmen Garcia,carmen.garcia218@example.com,Alcala de Henares,Madrid,ES,2023-02-03,2024-05-17,2025-11-28,8,2960.92,regular
+219,Alvaro Gonzalez,alvaro.gonzalez219@example.com,Santiago,Galicia,ES,2022-10-11,2024-12-30,2025-12-29,5,2488.91,regular
+220,Irene Gonzalez,irene.gonzalez220@example.com,Valencia,Comunidad Valenciana,ES,2022-11-22,2024-06-02,2025-09-27,6,1944.96,regular
+221,Leo Gonzalez,leo.gonzalez221@example.com,Sevilla,Andalucia,ES,2022-07-28,2024-03-10,2025-10-18,8,3032.56,vip
+222,Alvaro Lopez,alvaro.lopez222@example.com,Sevilla,Andalucia,ES,2023-05-05,2024-01-22,2025-11-10,12,3763.82,vip
+223,Sofia Gonzalez,sofia.gonzalez223@example.com,Albacete,Castilla-La Mancha,ES,2023-07-04,2024-06-25,2025-09-28,7,2758.24,regular
+224,Sara Moreno,sara.moreno224@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-02-03,2024-08-05,2025-10-20,8,3310.61,vip
+225,Julia Jimenez,julia.jimenez225@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-07-31,2024-01-01,2025-12-04,12,2118.52,vip
+226,Paula Torres,paula.torres226@example.com,Malaga,Andalucia,ES,2023-11-05,2024-02-01,2025-10-14,5,867.05,regular
+227,Hugo Rodriguez,hugo.rodriguez227@example.com,Valencia,Comunidad Valenciana,ES,2022-12-20,2024-05-20,2025-10-11,6,1168.47,regular
+228,Adrian Romero,adrian.romero228@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-12-04,2024-07-28,2025-09-30,4,1150.14,occasional
+229,Elena Torres,elena.torres229@example.com,Getafe,Madrid,ES,2022-03-05,2024-02-01,2025-11-13,10,6663.90,vip
+230,Hugo Moreno,hugo.moreno230@example.com,Tarragona,Cataluna,ES,2023-09-18,2024-09-26,2025-10-17,9,2029.63,regular
+231,Irene Martinez,irene.martinez231@example.com,Alcala de Henares,Madrid,ES,2023-11-22,2024-07-25,2025-06-28,5,1919.15,regular
+232,Irene Dominguez,irene.dominguez232@example.com,Albacete,Castilla-La Mancha,ES,2023-07-23,2024-11-17,2025-07-15,6,2328.50,regular
+233,Julia Dominguez,julia.dominguez233@example.com,Valencia,Comunidad Valenciana,ES,2023-11-09,2024-04-21,2025-07-29,5,3027.47,vip
+234,Mateo Navarro,mateo.navarro234@example.com,Granada,Andalucia,ES,2022-02-06,2024-09-25,2025-03-31,6,2530.10,regular
+235,Sofia Jimenez,sofia.jimenez235@example.com,Albacete,Castilla-La Mancha,ES,2023-10-10,2024-01-13,2024-01-13,1,595.32,occasional
+236,Noa Hernandez,noa.hernandez236@example.com,Malaga,Andalucia,ES,2023-08-22,2024-05-20,2025-12-15,13,4251.07,vip
+237,Carmen Jimenez,carmen.jimenez237@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-08-24,2024-02-01,2025-11-23,7,3241.82,vip
+238,Irene Gonzalez,irene.gonzalez238@example.com,A Coruna,Galicia,ES,2022-03-11,2024-02-15,2025-10-11,10,3625.74,vip
+239,Pablo Martinez,pablo.martinez239@example.com,Sevilla,Andalucia,ES,2023-05-27,2024-01-26,2025-06-01,6,1826.66,regular
+240,Sofia Lopez,sofia.lopez240@example.com,Tarragona,Cataluna,ES,2023-10-14,2024-06-06,2025-10-27,10,4474.63,vip
+241,Marcos Romero,marcos.romero241@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-11-24,2024-09-15,2025-12-09,4,1719.43,occasional
+242,Adrian Hernandez,adrian.hernandez242@example.com,Tarragona,Cataluna,ES,2023-07-28,2024-08-22,2025-03-04,3,1870.27,occasional
+243,Marcos Moreno,marcos.moreno243@example.com,Barcelona,Cataluna,ES,2023-11-18,2024-03-07,2025-12-25,7,3339.98,vip
+244,Adrian Martin,adrian.martin244@example.com,Alicante,Comunidad Valenciana,ES,2022-09-29,2024-03-10,2025-08-04,2,196.71,occasional
+245,Alvaro Torres,alvaro.torres245@example.com,Girona,Cataluna,ES,2022-10-07,2024-01-22,2025-05-24,3,1153.49,occasional
+246,Irene Diaz,irene.diaz246@example.com,Toledo,Castilla-La Mancha,ES,2023-07-20,2024-02-27,2025-10-25,8,2671.36,regular
+247,Hugo Alvarez,hugo.alvarez247@example.com,Granada,Andalucia,ES,2022-12-17,2024-03-14,2025-10-18,6,2079.09,regular
+248,Pablo Gonzalez,pablo.gonzalez248@example.com,Madrid,Madrid,ES,2023-07-21,2024-09-26,2025-09-29,4,1265.96,occasional
+249,Martina Perez,martina.perez249@example.com,Alicante,Comunidad Valenciana,ES,2022-09-27,2024-04-10,2025-10-24,8,3590.76,vip
+250,Carmen Romero,carmen.romero250@example.com,Alcala de Henares,Madrid,ES,2022-12-15,2024-03-14,2025-10-11,8,2284.89,regular
+251,Lucia Jimenez,lucia.jimenez251@example.com,Barcelona,Cataluna,ES,2023-09-22,2025-03-03,2025-10-21,6,1375.64,regular
+252,Hugo Martin,hugo.martin252@example.com,Tarragona,Cataluna,ES,2022-09-05,2024-05-21,2025-09-22,6,3450.04,vip
+253,Elena Dominguez,elena.dominguez253@example.com,Valencia,Comunidad Valenciana,ES,2023-12-27,2024-02-02,2025-09-16,8,2856.75,regular
+254,Javier Dominguez,javier.dominguez254@example.com,Barcelona,Cataluna,ES,2022-07-10,2024-01-25,2025-11-10,4,856.54,occasional
+255,Mateo Rodriguez,mateo.rodriguez255@example.com,Malaga,Andalucia,ES,2023-05-02,2024-04-15,2025-06-17,6,711.44,regular
+256,Mateo Alvarez,mateo.alvarez256@example.com,Getafe,Madrid,ES,2022-04-30,2024-01-24,2025-12-22,13,3111.32,vip
+257,Alba Lopez,alba.lopez257@example.com,Santiago,Galicia,ES,2023-03-09,2024-01-14,2025-09-14,11,2748.90,regular
+258,Diego Martinez,diego.martinez258@example.com,Albacete,Castilla-La Mancha,ES,2022-02-20,2024-06-01,2025-11-16,7,3641.16,vip
+259,Irene Navarro,irene.navarro259@example.com,Madrid,Madrid,ES,2022-07-31,2024-07-14,2025-05-12,5,1921.92,regular
+260,Mario Rodriguez,mario.rodriguez260@example.com,Castellon,Comunidad Valenciana,ES,2022-03-22,2024-03-17,2025-12-25,7,3935.28,vip
+261,Alvaro Gonzalez,alvaro.gonzalez261@example.com,Madrid,Madrid,ES,2023-01-13,2024-03-09,2025-12-14,11,4283.95,vip
+262,Marcos Jimenez,marcos.jimenez262@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-08-18,2024-10-08,2025-08-09,5,1596.81,regular
+263,Bruno Moreno,bruno.moreno263@example.com,Barcelona,Cataluna,ES,2022-01-19,2024-05-01,2024-12-06,3,1442.53,occasional
+264,Alba Moreno,alba.moreno264@example.com,Madrid,Madrid,ES,2023-11-25,2024-04-03,2025-05-03,7,1704.92,regular
+265,Julia Martin,julia.martin265@example.com,Alcala de Henares,Madrid,ES,2022-07-23,2024-01-19,2025-11-30,7,1389.09,regular
+266,Hugo Sanchez,hugo.sanchez266@example.com,Granada,Andalucia,ES,2023-03-15,2024-03-03,2025-12-28,11,5452.89,vip
+267,Paula Fernandez,paula.fernandez267@example.com,Malaga,Andalucia,ES,2022-12-21,2024-08-18,2025-06-17,6,2916.30,regular
+268,Julia Martinez,julia.martinez268@example.com,Castellon,Comunidad Valenciana,ES,2022-08-11,2024-07-16,2025-11-08,7,2268.05,regular
+269,Martina Diaz,martina.diaz269@example.com,Sevilla,Andalucia,ES,2023-10-13,2024-03-27,2024-06-23,4,1846.95,occasional
+270,Pablo Jimenez,pablo.jimenez270@example.com,Albacete,Castilla-La Mancha,ES,2023-09-18,2024-03-30,2025-11-17,8,2848.74,regular
+271,Adrian Diaz,adrian.diaz271@example.com,Valencia,Comunidad Valenciana,ES,2023-07-15,2024-04-25,2025-07-29,7,3299.91,vip
+272,Alvaro Dominguez,alvaro.dominguez272@example.com,A Coruna,Galicia,ES,2022-10-13,2024-02-17,2025-06-07,12,3782.13,vip
+273,Bruno Hernandez,bruno.hernandez273@example.com,Vigo,Galicia,ES,2022-12-25,2024-01-17,2025-12-07,5,726.96,regular
+274,Sofia Dominguez,sofia.dominguez274@example.com,Madrid,Madrid,ES,2022-02-06,2024-05-19,2025-12-15,7,861.98,regular
+275,Noa Ruiz,noa.ruiz275@example.com,Tarragona,Cataluna,ES,2022-12-27,2024-05-24,2025-07-29,6,843.53,regular
+276,Bruno Moreno,bruno.moreno276@example.com,Tarragona,Cataluna,ES,2022-12-18,2024-08-13,2025-07-01,3,1283.77,occasional
+277,Irene Ruiz,irene.ruiz277@example.com,Barcelona,Cataluna,ES,2022-11-20,2024-03-12,2025-08-27,8,1993.73,regular
+278,Marcos Martinez,marcos.martinez278@example.com,Madrid,Madrid,ES,2022-08-08,2024-03-14,2025-08-05,5,2307.85,regular
+279,Paula Moreno,paula.moreno279@example.com,Malaga,Andalucia,ES,2023-05-27,2024-06-12,2025-12-24,8,2960.32,regular
+280,Mateo Lopez,mateo.lopez280@example.com,Girona,Cataluna,ES,2023-10-18,2024-07-20,2025-06-30,3,1482.43,occasional
+281,Bruno Jimenez,bruno.jimenez281@example.com,Getafe,Madrid,ES,2022-02-17,2024-02-04,2025-12-25,8,2839.22,regular
+282,Pablo Martinez,pablo.martinez282@example.com,Granada,Andalucia,ES,2022-01-14,2024-07-13,2025-05-08,3,939.30,occasional
+283,Mateo Sanchez,mateo.sanchez283@example.com,Girona,Cataluna,ES,2023-08-12,2024-01-03,2025-06-22,12,3687.52,vip
+284,Sara Ruiz,sara.ruiz284@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-09-10,2024-01-29,2025-04-13,5,1165.53,regular
+285,Martina Martin,martina.martin285@example.com,Getafe,Madrid,ES,2022-11-20,2024-05-26,2025-11-14,8,1820.62,regular
+286,Diego Torres,diego.torres286@example.com,Valencia,Comunidad Valenciana,ES,2023-10-18,2024-03-30,2025-07-06,7,2515.58,regular
+287,Elena Romero,elena.romero287@example.com,Castellon,Comunidad Valenciana,ES,2023-01-14,2024-04-01,2025-09-21,8,1757.33,regular
+288,Sara Martinez,sara.martinez288@example.com,A Coruna,Galicia,ES,2023-08-22,2024-04-29,2025-02-09,7,2448.75,regular
+289,Irene Lopez,irene.lopez289@example.com,Getafe,Madrid,ES,2023-02-24,2024-07-11,2024-10-11,2,646.48,occasional
+290,Alvaro Romero,alvaro.romero290@example.com,Tarragona,Cataluna,ES,2023-03-17,2024-07-13,2025-12-13,6,1782.31,regular
+291,Paula Lopez,paula.lopez291@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-04-01,2024-07-08,2025-07-14,7,1393.00,regular
+292,Leo Torres,leo.torres292@example.com,Santiago,Galicia,ES,2022-05-17,2024-01-16,2025-12-11,10,2545.07,regular
+293,Julia Torres,julia.torres293@example.com,Toledo,Castilla-La Mancha,ES,2023-11-20,2024-01-27,2025-12-27,9,3328.42,vip
+294,Sara Gomez,sara.gomez294@example.com,Santiago,Galicia,ES,2022-03-06,2024-02-10,2025-12-17,10,2617.76,regular
+295,Lucia Alvarez,lucia.alvarez295@example.com,Vigo,Galicia,ES,2022-03-30,2024-03-04,2025-12-28,14,6756.10,vip
+296,Daniel Hernandez,daniel.hernandez296@example.com,Valencia,Comunidad Valenciana,ES,2023-03-03,2024-05-15,2025-04-12,7,2332.33,regular
+297,Diego Alvarez,diego.alvarez297@example.com,Alicante,Comunidad Valenciana,ES,2022-09-13,2024-04-21,2025-10-17,4,433.41,occasional
+298,Julia Ruiz,julia.ruiz298@example.com,Santiago,Galicia,ES,2022-11-19,2024-05-06,2025-09-21,4,1097.04,occasional
+299,Julia Perez,julia.perez299@example.com,Madrid,Madrid,ES,2022-09-11,2024-03-02,2025-10-18,6,1185.78,regular
+300,Hugo Martin,hugo.martin300@example.com,Madrid,Madrid,ES,2022-12-04,2024-07-14,2025-10-20,7,2458.04,regular
+301,Sara Jimenez,sara.jimenez301@example.com,Granada,Andalucia,ES,2023-06-21,2024-02-22,2025-10-13,11,3995.91,vip
+302,Mario Martin,mario.martin302@example.com,Castellon,Comunidad Valenciana,ES,2022-08-10,2024-01-06,2025-06-30,6,2515.45,regular
+303,Daniel Sanchez,daniel.sanchez303@example.com,Alicante,Comunidad Valenciana,ES,2022-05-14,2024-03-09,2025-10-19,7,2151.88,regular
+304,Noa Alvarez,noa.alvarez304@example.com,Albacete,Castilla-La Mancha,ES,2023-03-15,2024-07-04,2025-03-20,5,2937.54,regular
+305,Paula Ruiz,paula.ruiz305@example.com,Tarragona,Cataluna,ES,2022-11-15,2024-03-18,2025-12-18,9,3753.36,vip
+306,Valeria Ruiz,valeria.ruiz306@example.com,Albacete,Castilla-La Mancha,ES,2022-06-14,2024-10-06,2025-11-20,7,1637.08,regular
+307,Paula Dominguez,paula.dominguez307@example.com,Toledo,Castilla-La Mancha,ES,2022-02-04,2024-02-26,2025-02-06,5,1591.12,regular
+308,Alvaro Jimenez,alvaro.jimenez308@example.com,Valencia,Comunidad Valenciana,ES,2022-06-09,2024-05-31,2025-10-01,5,965.70,regular
+309,Irene Hernandez,irene.hernandez309@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-08-07,2024-09-02,2025-11-12,5,2526.11,regular
+310,Mario Romero,mario.romero310@example.com,Sevilla,Andalucia,ES,2022-09-21,2024-02-19,2025-09-21,8,2596.44,regular
+311,Adrian Jimenez,adrian.jimenez311@example.com,Malaga,Andalucia,ES,2023-07-19,2024-03-14,2025-10-05,5,2482.34,regular
+312,Julia Romero,julia.romero312@example.com,Albacete,Castilla-La Mancha,ES,2022-07-29,2024-06-29,2025-12-19,7,1783.94,regular
+313,Lucia Ruiz,lucia.ruiz313@example.com,Castellon,Comunidad Valenciana,ES,2023-01-27,2024-02-10,2025-08-27,10,4805.97,vip
+314,Marcos Garcia,marcos.garcia314@example.com,Granada,Andalucia,ES,2022-04-30,2024-04-13,2025-11-15,7,3140.77,vip
+315,Daniel Rodriguez,daniel.rodriguez315@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-05-14,2024-02-13,2025-12-02,8,1280.36,regular
+316,Carmen Lopez,carmen.lopez316@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-02-03,2024-01-20,2025-09-15,5,1219.62,regular
+317,Valeria Garcia,valeria.garcia317@example.com,Getafe,Madrid,ES,2022-10-07,2024-08-25,2025-08-25,7,1746.18,regular
+318,Diego Romero,diego.romero318@example.com,Tarragona,Cataluna,ES,2022-04-15,2024-03-12,2025-09-09,11,4210.27,vip
+319,Hugo Lopez,hugo.lopez319@example.com,Santiago,Galicia,ES,2022-07-19,2024-03-26,2025-09-23,8,4292.90,vip
+320,Irene Hernandez,irene.hernandez320@example.com,Valencia,Comunidad Valenciana,ES,2023-02-14,2024-03-02,2025-11-15,11,4439.82,vip
+321,Javier Ruiz,javier.ruiz321@example.com,Granada,Andalucia,ES,2022-02-08,2024-02-19,2025-07-28,7,1899.96,regular
+322,Paula Dominguez,paula.dominguez322@example.com,Santiago,Galicia,ES,2022-08-24,2024-11-14,2025-11-28,3,890.65,occasional
+323,Daniel Martin,daniel.martin323@example.com,Malaga,Andalucia,ES,2023-03-12,2024-11-26,2025-12-15,9,3142.87,vip
+324,Mario Ruiz,mario.ruiz324@example.com,Malaga,Andalucia,ES,2022-06-07,2025-01-20,2025-12-24,3,365.87,occasional
+325,Mateo Torres,mateo.torres325@example.com,Malaga,Andalucia,ES,2022-02-08,2024-02-07,2025-12-12,6,3434.28,vip
+326,Sofia Martin,sofia.martin326@example.com,Malaga,Andalucia,ES,2023-11-19,2024-03-14,2025-10-22,6,1247.40,regular
+327,Noa Gomez,noa.gomez327@example.com,Alicante,Comunidad Valenciana,ES,2022-08-29,2024-04-24,2025-08-03,5,967.54,regular
+328,Alba Gomez,alba.gomez328@example.com,Toledo,Castilla-La Mancha,ES,2023-08-14,2024-03-04,2025-10-05,6,1522.78,regular
+329,Hugo Romero,hugo.romero329@example.com,Girona,Cataluna,ES,2023-05-15,2024-04-12,2025-06-30,6,2669.76,regular
+330,Alba Alvarez,alba.alvarez330@example.com,Granada,Andalucia,ES,2023-09-21,2024-06-24,2025-12-06,7,4231.44,vip
+331,Diego Alvarez,diego.alvarez331@example.com,Girona,Cataluna,ES,2022-08-31,2024-06-16,2025-06-10,6,1782.30,regular
+332,Pablo Rodriguez,pablo.rodriguez332@example.com,Granada,Andalucia,ES,2023-10-02,2024-09-05,2025-11-25,4,995.08,occasional
+333,Hugo Martinez,hugo.martinez333@example.com,A Coruna,Galicia,ES,2022-10-31,2024-01-20,2025-12-19,9,2801.50,regular
+334,Mario Martinez,mario.martinez334@example.com,Castellon,Comunidad Valenciana,ES,2023-03-11,2024-02-27,2025-12-03,10,2203.89,regular
+335,Mateo Jimenez,mateo.jimenez335@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-03-16,2024-02-01,2025-04-21,8,3516.88,vip
+336,Sofia Romero,sofia.romero336@example.com,Alicante,Comunidad Valenciana,ES,2022-09-09,2024-05-19,2025-09-08,9,3623.79,vip
+337,Marcos Moreno,marcos.moreno337@example.com,Tarragona,Cataluna,ES,2022-03-09,2024-09-30,2025-09-05,5,2183.69,regular
+338,Pablo Torres,pablo.torres338@example.com,Granada,Andalucia,ES,2022-02-10,2024-02-20,2025-11-15,11,3951.08,vip
+339,Diego Romero,diego.romero339@example.com,Santiago,Galicia,ES,2023-01-31,2024-05-28,2025-12-25,11,3480.05,vip
+340,Mario Jimenez,mario.jimenez340@example.com,Girona,Cataluna,ES,2023-04-22,2024-03-23,2025-11-19,3,2140.34,occasional
+341,Julia Martin,julia.martin341@example.com,Granada,Andalucia,ES,2022-05-15,2024-07-09,2025-02-05,6,1556.80,regular
+342,Alba Perez,alba.perez342@example.com,Sevilla,Andalucia,ES,2023-10-30,2024-03-05,2025-07-16,7,2336.24,regular
+343,Bruno Romero,bruno.romero343@example.com,Castellon,Comunidad Valenciana,ES,2022-01-11,2024-03-07,2025-11-28,5,951.62,regular
+344,Alvaro Dominguez,alvaro.dominguez344@example.com,Sevilla,Andalucia,ES,2023-05-20,2024-07-10,2025-12-25,7,2859.42,regular
+345,Marcos Dominguez,marcos.dominguez345@example.com,Alicante,Comunidad Valenciana,ES,2022-12-15,2024-08-12,2025-12-10,9,2423.56,regular
+346,Bruno Sanchez,bruno.sanchez346@example.com,Toledo,Castilla-La Mancha,ES,2023-04-23,2024-02-14,2025-04-16,8,3752.03,vip
+347,Elena Romero,elena.romero347@example.com,Toledo,Castilla-La Mancha,ES,2022-01-11,2024-08-08,2025-12-19,6,1531.29,regular
+348,Javier Romero,javier.romero348@example.com,Alcala de Henares,Madrid,ES,2023-06-08,2024-04-11,2025-09-13,7,1464.74,regular
+349,Elena Fernandez,elena.fernandez349@example.com,Toledo,Castilla-La Mancha,ES,2022-02-04,2024-07-02,2025-12-02,7,3089.67,vip
+350,Elena Rodriguez,elena.rodriguez350@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-09-24,2024-05-18,2025-10-13,5,2200.32,regular
+351,Javier Moreno,javier.moreno351@example.com,Alcala de Henares,Madrid,ES,2022-02-12,2024-04-02,2025-07-21,4,1516.42,occasional
+352,Lucia Sanchez,lucia.sanchez352@example.com,Granada,Andalucia,ES,2022-05-19,2024-03-08,2025-10-05,4,782.30,occasional
+353,Javier Rodriguez,javier.rodriguez353@example.com,Alcala de Henares,Madrid,ES,2023-10-23,2024-02-19,2025-12-21,10,6342.32,vip
+354,Leo Lopez,leo.lopez354@example.com,Alicante,Comunidad Valenciana,ES,2022-03-16,2024-04-12,2025-03-01,3,1483.95,occasional
+355,Carmen Moreno,carmen.moreno355@example.com,Granada,Andalucia,ES,2022-12-11,2024-08-19,2025-09-22,8,3379.44,vip
+356,Sofia Ruiz,sofia.ruiz356@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-09-02,2025-03-02,2025-10-25,4,1492.70,occasional
+357,Marcos Perez,marcos.perez357@example.com,Girona,Cataluna,ES,2023-12-29,2024-03-14,2025-05-26,4,914.47,occasional
+358,Marcos Navarro,marcos.navarro358@example.com,A Coruna,Galicia,ES,2022-10-24,2024-07-03,2025-10-10,3,1996.75,occasional
+359,Alvaro Lopez,alvaro.lopez359@example.com,Valencia,Comunidad Valenciana,ES,2023-03-25,2024-01-16,2025-12-21,9,2151.56,regular
+360,Bruno Diaz,bruno.diaz360@example.com,Madrid,Madrid,ES,2022-04-12,2025-05-17,2025-10-26,5,1322.22,regular
+361,Valeria Gonzalez,valeria.gonzalez361@example.com,Tarragona,Cataluna,ES,2023-09-20,2025-07-18,2025-12-20,3,807.44,occasional
+362,Hugo Perez,hugo.perez362@example.com,A Coruna,Galicia,ES,2023-11-17,2024-01-11,2025-11-10,10,1632.09,regular
+363,Sofia Romero,sofia.romero363@example.com,Getafe,Madrid,ES,2023-03-11,2024-01-17,2025-12-22,6,1980.61,regular
+364,Sara Dominguez,sara.dominguez364@example.com,Sevilla,Andalucia,ES,2022-02-12,2024-04-04,2025-12-26,9,2390.28,regular
+365,Irene Perez,irene.perez365@example.com,Santiago,Galicia,ES,2022-11-04,2024-04-12,2025-07-03,4,784.52,occasional
+366,Leo Diaz,leo.diaz366@example.com,Santiago,Galicia,ES,2022-06-11,2024-08-15,2025-09-06,7,2314.94,regular
+367,Carmen Romero,carmen.romero367@example.com,Vigo,Galicia,ES,2023-02-09,2025-05-12,2025-06-27,2,321.47,occasional
+368,Leo Navarro,leo.navarro368@example.com,Castellon,Comunidad Valenciana,ES,2022-09-04,2024-05-22,2025-04-04,3,1744.94,occasional
+369,Elena Rodriguez,elena.rodriguez369@example.com,Tarragona,Cataluna,ES,2022-06-05,2024-05-12,2025-11-07,9,4566.84,vip
+370,Carmen Perez,carmen.perez370@example.com,Girona,Cataluna,ES,2023-04-15,2024-01-21,2025-08-14,6,2770.15,regular
+371,Martina Navarro,martina.navarro371@example.com,Granada,Andalucia,ES,2023-06-20,2024-02-12,2025-04-14,5,1060.93,regular
+372,Hugo Gonzalez,hugo.gonzalez372@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-06-23,2024-05-03,2025-11-25,9,1963.53,regular
+373,Valeria Alvarez,valeria.alvarez373@example.com,Toledo,Castilla-La Mancha,ES,2023-06-02,2024-04-06,2025-08-29,6,2451.65,regular
+374,Valeria Fernandez,valeria.fernandez374@example.com,Tarragona,Cataluna,ES,2022-08-29,2024-08-22,2025-10-09,5,2750.80,regular
+375,Carmen Perez,carmen.perez375@example.com,Girona,Cataluna,ES,2022-06-15,2024-05-25,2025-07-08,6,1427.41,regular
+376,Noa Ruiz,noa.ruiz376@example.com,Albacete,Castilla-La Mancha,ES,2023-02-20,2025-05-17,2025-12-24,4,2908.60,occasional
+377,Mateo Alvarez,mateo.alvarez377@example.com,Alicante,Comunidad Valenciana,ES,2023-02-08,2024-06-17,2025-09-10,4,1275.19,occasional
+378,Sara Perez,sara.perez378@example.com,Getafe,Madrid,ES,2023-08-05,2024-02-21,2025-12-29,11,4907.65,vip
+379,Marcos Diaz,marcos.diaz379@example.com,Albacete,Castilla-La Mancha,ES,2023-03-05,2024-03-10,2025-03-21,4,3410.42,vip
+380,Daniel Alvarez,daniel.alvarez380@example.com,Albacete,Castilla-La Mancha,ES,2022-06-17,2024-04-01,2025-11-12,5,1837.96,regular
+381,Marcos Alvarez,marcos.alvarez381@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-09-17,2024-02-18,2025-12-24,12,2382.31,vip
+382,Marcos Navarro,marcos.navarro382@example.com,Tarragona,Cataluna,ES,2022-08-19,2024-05-10,2025-11-26,8,2310.58,regular
+383,Irene Rodriguez,irene.rodriguez383@example.com,Madrid,Madrid,ES,2023-10-17,2024-04-07,2025-08-23,4,1055.01,occasional
+384,Sofia Perez,sofia.perez384@example.com,Castellon,Comunidad Valenciana,ES,2023-10-24,2024-12-28,2025-11-06,5,1466.79,regular
+385,Alvaro Rodriguez,alvaro.rodriguez385@example.com,Alicante,Comunidad Valenciana,ES,2022-04-09,2024-07-23,2025-08-24,6,2534.89,regular
+386,Mario Garcia,mario.garcia386@example.com,A Coruna,Galicia,ES,2023-12-26,2024-04-03,2025-05-16,7,2644.49,regular
+387,Marcos Gomez,marcos.gomez387@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-07-02,2024-02-18,2025-11-22,11,2990.97,regular
+388,Diego Martinez,diego.martinez388@example.com,A Coruna,Galicia,ES,2023-09-14,2024-04-13,2025-06-29,4,1203.08,occasional
+389,Adrian Romero,adrian.romero389@example.com,Girona,Cataluna,ES,2023-04-18,2024-01-31,2025-09-23,5,2735.31,regular
+390,Alvaro Hernandez,alvaro.hernandez390@example.com,Madrid,Madrid,ES,2022-09-18,2024-07-04,2025-09-27,5,1170.69,regular
+391,Bruno Gonzalez,bruno.gonzalez391@example.com,A Coruna,Galicia,ES,2022-03-03,2024-11-16,2025-12-30,5,1802.74,regular
+392,Carmen Hernandez,carmen.hernandez392@example.com,Madrid,Madrid,ES,2022-12-11,2024-05-02,2025-11-28,6,3230.01,vip
+393,Leo Gonzalez,leo.gonzalez393@example.com,Vigo,Galicia,ES,2022-08-08,2024-05-23,2025-11-12,8,2998.30,regular
+394,Mateo Romero,mateo.romero394@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-11-19,2024-02-22,2025-07-26,7,2330.28,regular
+395,Mario Gomez,mario.gomez395@example.com,Albacete,Castilla-La Mancha,ES,2023-11-15,2024-06-18,2025-08-30,5,1374.40,regular
+396,Sara Rodriguez,sara.rodriguez396@example.com,Toledo,Castilla-La Mancha,ES,2023-07-02,2024-02-18,2025-07-26,10,3996.51,vip
+397,Sofia Hernandez,sofia.hernandez397@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-10-15,2024-01-29,2025-10-28,7,3637.67,vip
+398,Bruno Navarro,bruno.navarro398@example.com,Castellon,Comunidad Valenciana,ES,2023-01-27,2025-11-04,2025-11-16,2,1022.20,occasional
+399,Martina Romero,martina.romero399@example.com,A Coruna,Galicia,ES,2023-01-12,2024-03-25,2025-11-24,8,5309.09,vip
+400,Adrian Dominguez,adrian.dominguez400@example.com,Sevilla,Andalucia,ES,2022-05-02,2024-02-22,2025-12-14,12,3103.29,vip
+401,Paula Moreno,paula.moreno401@example.com,Vigo,Galicia,ES,2022-08-17,2024-04-21,2025-12-14,10,3109.25,vip
+402,Leo Torres,leo.torres402@example.com,Toledo,Castilla-La Mancha,ES,2022-02-24,2025-05-12,2025-12-23,4,1535.81,occasional
+403,Alba Gonzalez,alba.gonzalez403@example.com,Tarragona,Cataluna,ES,2023-10-09,2024-05-29,2025-11-21,5,3178.26,vip
+404,Marcos Hernandez,marcos.hernandez404@example.com,Girona,Cataluna,ES,2023-02-11,2025-03-02,2025-07-04,3,1179.70,occasional
+405,Alvaro Gomez,alvaro.gomez405@example.com,Alicante,Comunidad Valenciana,ES,2023-09-19,2024-05-18,2025-11-18,6,1729.86,regular
+406,Javier Romero,javier.romero406@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-11-10,2024-02-11,2025-11-20,5,1333.85,regular
+407,Adrian Dominguez,adrian.dominguez407@example.com,Alcala de Henares,Madrid,ES,2023-02-03,2024-09-12,2025-08-14,5,3299.96,vip
+408,Martina Navarro,martina.navarro408@example.com,Alicante,Comunidad Valenciana,ES,2023-04-28,2024-04-15,2025-09-01,8,3165.86,vip
+409,Sofia Gomez,sofia.gomez409@example.com,Barcelona,Cataluna,ES,2023-02-27,2024-05-22,2025-10-22,5,1393.39,regular
+410,Paula Diaz,paula.diaz410@example.com,Alicante,Comunidad Valenciana,ES,2023-03-01,2024-09-28,2025-10-15,4,2863.92,occasional
+411,Marcos Alvarez,marcos.alvarez411@example.com,Barcelona,Cataluna,ES,2022-05-03,2024-02-21,2025-12-04,9,3600.30,vip
+412,Lucia Hernandez,lucia.hernandez412@example.com,Malaga,Andalucia,ES,2023-01-26,2024-02-04,2025-12-24,11,3762.31,vip
+413,Julia Diaz,julia.diaz413@example.com,Alicante,Comunidad Valenciana,ES,2022-03-06,2024-02-16,2025-12-29,11,5235.58,vip
+414,Alba Sanchez,alba.sanchez414@example.com,Albacete,Castilla-La Mancha,ES,2022-08-29,2025-03-16,2025-09-13,3,1023.46,occasional
+415,Marcos Alvarez,marcos.alvarez415@example.com,Malaga,Andalucia,ES,2022-05-22,2024-12-05,2025-06-26,3,1122.75,occasional
+416,Alvaro Fernandez,alvaro.fernandez416@example.com,Valencia,Comunidad Valenciana,ES,2022-06-03,2024-01-23,2025-04-17,4,495.04,occasional
+417,Javier Garcia,javier.garcia417@example.com,Vigo,Galicia,ES,2022-09-16,2024-01-31,2025-12-08,11,5067.92,vip
+418,Martina Diaz,martina.diaz418@example.com,A Coruna,Galicia,ES,2022-02-11,2024-06-01,2025-03-24,6,1088.87,regular
+419,Bruno Lopez,bruno.lopez419@example.com,Granada,Andalucia,ES,2022-10-25,2024-06-17,2025-12-24,8,2750.75,regular
+420,Sara Hernandez,sara.hernandez420@example.com,Castellon,Comunidad Valenciana,ES,2022-07-03,2024-04-13,2025-08-10,6,2022.79,regular
+421,Javier Rodriguez,javier.rodriguez421@example.com,Castellon,Comunidad Valenciana,ES,2022-12-29,2024-08-06,2025-10-14,5,2182.59,regular
+422,Martina Fernandez,martina.fernandez422@example.com,Santiago,Galicia,ES,2023-04-22,2024-04-23,2025-08-21,7,3519.39,vip
+423,Hugo Torres,hugo.torres423@example.com,Albacete,Castilla-La Mancha,ES,2022-03-12,2024-03-23,2025-11-23,10,6202.17,vip
+424,Mateo Garcia,mateo.garcia424@example.com,Castellon,Comunidad Valenciana,ES,2023-09-23,2024-05-29,2025-08-05,8,3952.54,vip
+425,Sara Torres,sara.torres425@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-05-20,2024-02-23,2025-04-14,2,494.84,occasional
+426,Alba Romero,alba.romero426@example.com,Toledo,Castilla-La Mancha,ES,2023-07-31,2024-02-08,2025-11-14,6,3540.08,vip
+427,Diego Gonzalez,diego.gonzalez427@example.com,Malaga,Andalucia,ES,2023-09-05,2024-03-23,2025-10-23,4,1360.54,occasional
+428,Julia Moreno,julia.moreno428@example.com,Sevilla,Andalucia,ES,2023-06-04,2024-01-09,2025-06-03,6,4278.88,vip
+429,Marcos Moreno,marcos.moreno429@example.com,Castellon,Comunidad Valenciana,ES,2023-02-09,2024-10-26,2025-07-03,2,819.82,occasional
+430,Lucia Jimenez,lucia.jimenez430@example.com,Getafe,Madrid,ES,2022-03-09,2024-04-03,2025-10-14,8,1477.99,regular
+431,Irene Martinez,irene.martinez431@example.com,A Coruna,Galicia,ES,2022-06-15,2024-01-27,2025-10-02,10,2196.28,regular
+432,Carmen Martinez,carmen.martinez432@example.com,Barcelona,Cataluna,ES,2023-06-25,2024-05-07,2025-12-30,8,2523.50,regular
+433,Adrian Sanchez,adrian.sanchez433@example.com,Santiago,Galicia,ES,2022-09-28,2024-04-27,2025-12-24,12,3537.44,vip
+434,Valeria Gomez,valeria.gomez434@example.com,Barcelona,Cataluna,ES,2022-01-11,2024-07-02,2025-11-29,7,1396.08,regular
+435,Leo Ruiz,leo.ruiz435@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-02-02,2024-03-15,2025-05-17,7,1664.69,regular
+436,Irene Jimenez,irene.jimenez436@example.com,Valencia,Comunidad Valenciana,ES,2022-04-30,2024-02-06,2025-08-27,3,961.19,occasional
+437,Alvaro Moreno,alvaro.moreno437@example.com,Malaga,Andalucia,ES,2022-04-09,2024-02-15,2025-11-13,10,3987.21,vip
+438,Sara Gonzalez,sara.gonzalez438@example.com,Albacete,Castilla-La Mancha,ES,2022-02-12,2024-04-30,2025-10-10,7,1424.41,regular
+439,Leo Ruiz,leo.ruiz439@example.com,Getafe,Madrid,ES,2022-01-21,2024-02-04,2025-10-22,5,1399.18,regular
+440,Sara Hernandez,sara.hernandez440@example.com,Tarragona,Cataluna,ES,2022-10-25,2024-10-13,2025-11-08,5,1701.81,regular
+441,Leo Navarro,leo.navarro441@example.com,Vigo,Galicia,ES,2023-07-15,2024-09-21,2025-12-03,6,1019.50,regular
+442,Adrian Rodriguez,adrian.rodriguez442@example.com,Valencia,Comunidad Valenciana,ES,2022-12-30,2024-03-09,2024-11-14,8,3112.26,vip
+443,Javier Romero,javier.romero443@example.com,Alicante,Comunidad Valenciana,ES,2022-03-04,2024-02-23,2025-11-01,12,3733.83,vip
+444,Elena Alvarez,elena.alvarez444@example.com,A Coruna,Galicia,ES,2023-07-14,2024-02-08,2025-08-25,13,7448.25,vip
+445,Hugo Gomez,hugo.gomez445@example.com,Malaga,Andalucia,ES,2023-05-16,2024-05-11,2025-12-14,8,3234.95,vip
+446,Marcos Alvarez,marcos.alvarez446@example.com,Albacete,Castilla-La Mancha,ES,2022-06-18,2024-03-07,2025-06-23,6,1036.88,regular
+447,Alvaro Navarro,alvaro.navarro447@example.com,Toledo,Castilla-La Mancha,ES,2023-11-20,2024-02-10,2025-12-02,12,4856.64,vip
+448,Mateo Perez,mateo.perez448@example.com,Alicante,Comunidad Valenciana,ES,2023-03-03,2024-03-12,2025-11-20,8,3258.79,vip
+449,Martina Moreno,martina.moreno449@example.com,Granada,Andalucia,ES,2023-09-03,2024-03-29,2025-09-30,9,3346.23,vip
+450,Alba Ruiz,alba.ruiz450@example.com,Toledo,Castilla-La Mancha,ES,2022-04-17,2024-03-07,2025-07-10,8,4492.81,vip
+451,Valeria Rodriguez,valeria.rodriguez451@example.com,Tarragona,Cataluna,ES,2022-05-28,2024-03-09,2025-11-18,6,3150.52,vip
+452,Julia Martin,julia.martin452@example.com,Tarragona,Cataluna,ES,2023-03-11,2024-04-09,2025-12-23,12,5775.68,vip
+453,Mateo Lopez,mateo.lopez453@example.com,Santiago,Galicia,ES,2022-11-06,2024-01-14,2025-12-22,5,1704.31,regular
+454,Alba Lopez,alba.lopez454@example.com,Barcelona,Cataluna,ES,2023-04-21,2024-03-09,2025-10-30,6,2584.51,regular
+455,Carmen Alvarez,carmen.alvarez455@example.com,Vigo,Galicia,ES,2023-08-09,2024-02-23,2025-12-23,11,2084.63,regular
+456,Elena Gonzalez,elena.gonzalez456@example.com,Alicante,Comunidad Valenciana,ES,2022-03-24,2024-02-26,2025-11-12,8,1842.10,regular
+457,Marcos Gomez,marcos.gomez457@example.com,Albacete,Castilla-La Mancha,ES,2022-01-20,2024-05-27,2025-10-19,5,1713.81,regular
+458,Sara Garcia,sara.garcia458@example.com,Granada,Andalucia,ES,2023-09-28,2024-11-07,2025-08-11,4,2510.78,occasional
+459,Alvaro Gonzalez,alvaro.gonzalez459@example.com,A Coruna,Galicia,ES,2022-07-03,2024-04-19,2025-11-12,7,1737.96,regular
+460,Paula Jimenez,paula.jimenez460@example.com,Castellon,Comunidad Valenciana,ES,2023-03-17,2024-01-14,2025-11-26,6,1986.97,regular
+461,Julia Rodriguez,julia.rodriguez461@example.com,Alicante,Comunidad Valenciana,ES,2023-11-15,2024-06-07,2025-08-16,12,3348.76,vip
+462,Mateo Martinez,mateo.martinez462@example.com,Alcala de Henares,Madrid,ES,2022-10-07,2024-09-14,2025-12-11,9,3398.20,vip
+463,Alba Lopez,alba.lopez463@example.com,Girona,Cataluna,ES,2022-03-07,2024-03-23,2025-12-30,7,1666.93,regular
+464,Noa Ruiz,noa.ruiz464@example.com,Getafe,Madrid,ES,2023-04-20,2024-01-27,2025-10-22,8,1769.98,regular
+465,Hugo Hernandez,hugo.hernandez465@example.com,Barcelona,Cataluna,ES,2022-04-01,2024-07-29,2025-12-10,7,1753.24,regular
+466,Noa Gonzalez,noa.gonzalez466@example.com,Valencia,Comunidad Valenciana,ES,2022-01-11,2024-09-08,2025-11-12,9,2395.48,regular
+467,Sara Perez,sara.perez467@example.com,Tarragona,Cataluna,ES,2022-07-19,2024-01-19,2025-11-29,6,1044.57,regular
+468,Mateo Diaz,mateo.diaz468@example.com,Malaga,Andalucia,ES,2022-01-21,2024-07-27,2025-12-08,9,2239.80,regular
+469,Marcos Fernandez,marcos.fernandez469@example.com,Madrid,Madrid,ES,2023-09-18,2024-07-19,2025-08-18,7,3907.31,vip
+470,Sofia Lopez,sofia.lopez470@example.com,Castellon,Comunidad Valenciana,ES,2023-10-23,2024-01-18,2025-11-17,6,3514.70,vip
+471,Elena Ruiz,elena.ruiz471@example.com,Girona,Cataluna,ES,2023-05-28,2024-03-08,2025-09-19,4,1281.93,occasional
+472,Bruno Moreno,bruno.moreno472@example.com,Toledo,Castilla-La Mancha,ES,2023-05-24,2024-01-13,2025-11-20,13,4742.84,vip
+473,Marcos Hernandez,marcos.hernandez473@example.com,Toledo,Castilla-La Mancha,ES,2023-01-07,2024-01-07,2025-07-22,7,2379.96,regular
+474,Paula Gonzalez,paula.gonzalez474@example.com,Tarragona,Cataluna,ES,2023-04-22,2024-04-08,2025-01-18,4,996.16,occasional
+475,Alba Garcia,alba.garcia475@example.com,Alicante,Comunidad Valenciana,ES,2022-02-26,2024-03-19,2025-12-28,11,4028.32,vip
+476,Valeria Hernandez,valeria.hernandez476@example.com,Toledo,Castilla-La Mancha,ES,2023-03-05,2024-05-01,2025-12-12,9,1950.20,regular
+477,Carmen Fernandez,carmen.fernandez477@example.com,Castellon,Comunidad Valenciana,ES,2023-04-30,2024-06-22,2025-04-18,6,2304.40,regular
+478,Alvaro Jimenez,alvaro.jimenez478@example.com,Alcala de Henares,Madrid,ES,2023-08-19,2024-05-06,2024-05-06,1,491.88,occasional
+479,Javier Martinez,javier.martinez479@example.com,Sevilla,Andalucia,ES,2022-09-06,2024-02-28,2025-08-14,7,2257.91,regular
+480,Martina Garcia,martina.garcia480@example.com,Albacete,Castilla-La Mancha,ES,2023-04-08,2024-03-14,2025-12-23,8,3231.99,vip
+481,Pablo Romero,pablo.romero481@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-11-02,2024-07-04,2025-10-05,8,1607.52,regular
+482,Javier Dominguez,javier.dominguez482@example.com,Santiago,Galicia,ES,2023-07-29,2024-05-01,2025-11-09,12,2718.30,vip
+483,Sofia Navarro,sofia.navarro483@example.com,Tarragona,Cataluna,ES,2023-02-01,2024-03-11,2025-10-17,5,1351.04,regular
+484,Noa Gonzalez,noa.gonzalez484@example.com,A Coruna,Galicia,ES,2023-02-18,2024-02-22,2025-10-23,12,4446.14,vip
+485,Daniel Gonzalez,daniel.gonzalez485@example.com,Madrid,Madrid,ES,2022-10-14,2024-01-13,2025-09-11,5,819.11,regular
+486,Bruno Martinez,bruno.martinez486@example.com,Sevilla,Andalucia,ES,2023-09-01,2024-03-31,2025-12-27,11,6021.04,vip
+487,Mario Ruiz,mario.ruiz487@example.com,Girona,Cataluna,ES,2022-07-15,2024-12-19,2025-11-29,5,1086.46,regular
+488,Alvaro Lopez,alvaro.lopez488@example.com,Barcelona,Cataluna,ES,2023-04-01,2024-05-20,2025-11-26,3,1492.66,occasional
+489,Diego Gomez,diego.gomez489@example.com,Granada,Andalucia,ES,2022-07-14,2024-05-18,2025-12-28,4,459.95,occasional
+490,Martina Alvarez,martina.alvarez490@example.com,Santiago,Galicia,ES,2022-09-22,2024-03-09,2025-12-27,16,5074.76,vip
+491,Alvaro Martinez,alvaro.martinez491@example.com,Tarragona,Cataluna,ES,2023-04-15,2024-05-22,2025-12-08,11,2761.06,regular
+492,Mateo Perez,mateo.perez492@example.com,A Coruna,Galicia,ES,2022-07-29,2024-02-05,2025-11-29,10,3358.30,vip
+493,Hugo Alvarez,hugo.alvarez493@example.com,Barcelona,Cataluna,ES,2022-12-25,2024-04-01,2025-11-15,8,1601.76,regular
+494,Alba Diaz,alba.diaz494@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-05-17,2024-06-13,2025-12-18,6,1704.30,regular
+495,Paula Gonzalez,paula.gonzalez495@example.com,Sevilla,Andalucia,ES,2022-05-26,2024-01-15,2025-11-10,6,1992.10,regular
+496,Daniel Romero,daniel.romero496@example.com,Girona,Cataluna,ES,2023-11-15,2024-05-15,2025-09-24,8,2002.46,regular
+497,Pablo Jimenez,pablo.jimenez497@example.com,Sevilla,Andalucia,ES,2023-10-05,2024-04-27,2025-12-17,8,2456.79,regular
+498,Sara Martin,sara.martin498@example.com,Malaga,Andalucia,ES,2022-04-04,2024-04-19,2025-11-09,8,1793.30,regular
+499,Marcos Navarro,marcos.navarro499@example.com,Barcelona,Cataluna,ES,2023-04-25,2024-02-21,2025-11-14,14,3152.87,vip
+500,Javier Ruiz,javier.ruiz500@example.com,Girona,Cataluna,ES,2022-03-21,2024-01-15,2025-12-28,10,3079.00,vip
+501,Bruno Hernandez,bruno.hernandez501@example.com,Madrid,Madrid,ES,2023-02-21,2024-09-08,2025-11-10,5,1281.56,regular
+502,Mario Rodriguez,mario.rodriguez502@example.com,Valencia,Comunidad Valenciana,ES,2023-08-09,2025-05-12,2025-09-12,2,307.68,occasional
+503,Diego Ruiz,diego.ruiz503@example.com,Toledo,Castilla-La Mancha,ES,2022-09-19,2024-05-29,2025-12-27,10,3764.98,vip
+504,Sofia Hernandez,sofia.hernandez504@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-10-17,2024-07-02,2025-11-23,5,1157.24,regular
+505,Daniel Martin,daniel.martin505@example.com,Girona,Cataluna,ES,2023-04-09,2024-01-31,2025-11-21,11,1307.20,regular
+506,Marcos Jimenez,marcos.jimenez506@example.com,A Coruna,Galicia,ES,2023-02-10,2024-07-26,2025-08-03,5,2449.17,regular
+507,Sara Fernandez,sara.fernandez507@example.com,Girona,Cataluna,ES,2023-07-26,2025-03-20,2025-12-07,7,3261.27,vip
+508,Mateo Navarro,mateo.navarro508@example.com,Alicante,Comunidad Valenciana,ES,2022-12-31,2024-07-07,2025-10-06,4,1950.40,occasional
+509,Paula Fernandez,paula.fernandez509@example.com,Castellon,Comunidad Valenciana,ES,2023-10-01,2024-04-25,2025-09-24,6,1787.45,regular
+510,Adrian Rodriguez,adrian.rodriguez510@example.com,A Coruna,Galicia,ES,2023-05-26,2024-04-14,2025-11-05,8,2246.13,regular
+511,Daniel Ruiz,daniel.ruiz511@example.com,Girona,Cataluna,ES,2022-11-22,2024-05-11,2025-11-25,6,1314.91,regular
+512,Lucia Hernandez,lucia.hernandez512@example.com,Barcelona,Cataluna,ES,2022-09-25,2024-07-06,2025-11-20,9,3030.70,vip
+513,Mateo Lopez,mateo.lopez513@example.com,Valencia,Comunidad Valenciana,ES,2023-08-30,2024-08-16,2025-12-14,7,3547.64,vip
+514,Valeria Hernandez,valeria.hernandez514@example.com,Barcelona,Cataluna,ES,2022-12-16,2024-06-30,2025-12-10,3,453.99,occasional
+515,Sara Gomez,sara.gomez515@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-10-17,2024-05-29,2025-09-23,4,1933.15,occasional
+516,Sofia Gonzalez,sofia.gonzalez516@example.com,Valencia,Comunidad Valenciana,ES,2023-01-27,2024-10-19,2025-12-25,7,2579.52,regular
+517,Sara Diaz,sara.diaz517@example.com,Girona,Cataluna,ES,2022-11-23,2024-07-10,2024-11-24,4,1104.76,occasional
+518,Alvaro Sanchez,alvaro.sanchez518@example.com,Barcelona,Cataluna,ES,2023-06-24,2024-06-11,2025-12-30,7,2873.02,regular
+519,Adrian Dominguez,adrian.dominguez519@example.com,Alcala de Henares,Madrid,ES,2022-04-10,2024-09-07,2025-11-06,7,3850.87,vip
+520,Mario Rodriguez,mario.rodriguez520@example.com,Toledo,Castilla-La Mancha,ES,2023-10-04,2024-05-30,2025-07-30,10,4134.78,vip
+521,Irene Perez,irene.perez521@example.com,A Coruna,Galicia,ES,2022-03-27,2024-06-15,2025-10-26,2,834.25,occasional
+522,Alba Ruiz,alba.ruiz522@example.com,Castellon,Comunidad Valenciana,ES,2022-08-28,2024-09-02,2025-07-27,4,670.53,occasional
+523,Julia Hernandez,julia.hernandez523@example.com,Toledo,Castilla-La Mancha,ES,2023-03-31,2024-07-10,2025-09-21,10,3063.90,vip
+524,Paula Rodriguez,paula.rodriguez524@example.com,Madrid,Madrid,ES,2022-09-05,2024-06-08,2025-08-27,5,792.21,regular
+525,Mateo Perez,mateo.perez525@example.com,Tarragona,Cataluna,ES,2022-02-28,2024-02-06,2025-12-28,12,4129.03,vip
+526,Daniel Torres,daniel.torres526@example.com,Madrid,Madrid,ES,2022-11-30,2024-01-23,2025-07-17,2,1008.11,occasional
+527,Daniel Torres,daniel.torres527@example.com,Tarragona,Cataluna,ES,2023-02-10,2024-06-24,2025-06-18,3,1346.75,occasional
+528,Alba Ruiz,alba.ruiz528@example.com,Madrid,Madrid,ES,2022-05-30,2024-03-16,2025-04-23,7,2355.52,regular
+529,Javier Martin,javier.martin529@example.com,Valencia,Comunidad Valenciana,ES,2023-07-06,2024-05-03,2025-09-16,7,2686.14,regular
+530,Daniel Garcia,daniel.garcia530@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-07-11,2024-03-26,2025-02-10,5,965.07,regular
+531,Sofia Jimenez,sofia.jimenez531@example.com,Girona,Cataluna,ES,2023-07-04,2024-01-31,2025-11-20,5,2603.75,regular
+532,Lucia Lopez,lucia.lopez532@example.com,Madrid,Madrid,ES,2022-05-11,2024-03-21,2025-12-02,7,1895.51,regular
+533,Alvaro Gonzalez,alvaro.gonzalez533@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-12-15,2024-01-15,2025-10-13,13,5061.03,vip
+534,Julia Martin,julia.martin534@example.com,Alcala de Henares,Madrid,ES,2023-02-05,2024-06-22,2025-06-23,9,2994.31,regular
+535,Mario Jimenez,mario.jimenez535@example.com,Santiago,Galicia,ES,2023-07-07,2024-03-28,2025-12-18,5,1961.83,regular
+536,Daniel Torres,daniel.torres536@example.com,Malaga,Andalucia,ES,2023-07-06,2024-05-01,2025-07-17,4,368.62,occasional
+537,Leo Garcia,leo.garcia537@example.com,Tarragona,Cataluna,ES,2022-01-13,2024-05-11,2025-12-22,7,1619.22,regular
+538,Leo Dominguez,leo.dominguez538@example.com,Madrid,Madrid,ES,2023-02-10,2025-03-02,2025-12-13,5,2721.82,regular
+539,Sara Fernandez,sara.fernandez539@example.com,A Coruna,Galicia,ES,2022-08-11,2024-01-17,2025-08-22,6,2515.23,regular
+540,Julia Martinez,julia.martinez540@example.com,Granada,Andalucia,ES,2022-03-21,2024-03-25,2025-11-17,11,4404.38,vip
+541,Noa Jimenez,noa.jimenez541@example.com,Santiago,Galicia,ES,2022-10-01,2024-01-06,2025-12-12,6,602.64,regular
+542,Alvaro Gomez,alvaro.gomez542@example.com,Alcala de Henares,Madrid,ES,2023-09-13,2024-07-16,2025-12-22,7,1709.04,regular
+543,Diego Martinez,diego.martinez543@example.com,Santiago,Galicia,ES,2022-11-04,2024-01-20,2025-08-13,5,2531.59,regular
+544,Mateo Alvarez,mateo.alvarez544@example.com,Valencia,Comunidad Valenciana,ES,2022-05-20,2024-02-08,2025-11-05,11,4298.09,vip
+545,Martina Rodriguez,martina.rodriguez545@example.com,Valencia,Comunidad Valenciana,ES,2023-03-06,2024-01-09,2025-09-04,4,1134.20,occasional
+546,Julia Martinez,julia.martinez546@example.com,Madrid,Madrid,ES,2022-12-13,2024-01-05,2025-12-24,10,3993.57,vip
+547,Adrian Dominguez,adrian.dominguez547@example.com,Granada,Andalucia,ES,2022-08-25,2024-03-26,2025-11-12,4,1831.66,occasional
+548,Adrian Diaz,adrian.diaz548@example.com,Barcelona,Cataluna,ES,2023-07-25,2024-02-10,2025-12-24,3,961.74,occasional
+549,Alba Navarro,alba.navarro549@example.com,Valencia,Comunidad Valenciana,ES,2022-06-27,2024-03-24,2025-11-05,6,1420.88,regular
+550,Hugo Hernandez,hugo.hernandez550@example.com,Madrid,Madrid,ES,2022-05-26,2025-04-27,2025-04-27,1,162.64,occasional
+551,Lucia Diaz,lucia.diaz551@example.com,Granada,Andalucia,ES,2023-10-04,2024-05-12,2025-11-03,8,2001.60,regular
+552,Valeria Fernandez,valeria.fernandez552@example.com,Valencia,Comunidad Valenciana,ES,2023-12-06,2024-02-11,2025-10-16,11,4208.10,vip
+553,Mateo Martin,mateo.martin553@example.com,Alicante,Comunidad Valenciana,ES,2022-11-20,2024-07-09,2025-06-18,2,917.75,occasional
+554,Noa Navarro,noa.navarro554@example.com,Alcala de Henares,Madrid,ES,2022-12-01,2024-02-24,2025-12-14,7,3433.93,vip
+555,Elena Rodriguez,elena.rodriguez555@example.com,Girona,Cataluna,ES,2023-04-07,2024-08-21,2025-06-24,4,1753.63,occasional
+556,Hugo Lopez,hugo.lopez556@example.com,Albacete,Castilla-La Mancha,ES,2022-01-18,2024-09-02,2025-07-16,2,692.84,occasional
+557,Diego Torres,diego.torres557@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-05-14,2024-09-07,2024-11-16,2,559.54,occasional
+558,Javier Alvarez,javier.alvarez558@example.com,Valencia,Comunidad Valenciana,ES,2022-05-25,2024-12-15,2025-10-06,4,1647.70,occasional
+559,Alba Rodriguez,alba.rodriguez559@example.com,Castellon,Comunidad Valenciana,ES,2022-08-05,2024-03-03,2025-12-21,5,1816.02,regular
+560,Adrian Lopez,adrian.lopez560@example.com,A Coruna,Galicia,ES,2023-08-31,2024-06-27,2025-12-20,9,2067.73,regular
+561,Valeria Lopez,valeria.lopez561@example.com,Girona,Cataluna,ES,2023-11-19,2024-02-03,2025-12-23,7,2865.00,regular
+562,Noa Lopez,noa.lopez562@example.com,Barcelona,Cataluna,ES,2022-05-02,2024-04-13,2025-11-24,8,2869.81,regular
+563,Carmen Navarro,carmen.navarro563@example.com,Getafe,Madrid,ES,2022-11-21,2024-05-31,2025-11-09,5,1187.29,regular
+564,Lucia Dominguez,lucia.dominguez564@example.com,Alicante,Comunidad Valenciana,ES,2022-05-10,2024-03-20,2025-11-07,12,4017.38,vip
+565,Sofia Torres,sofia.torres565@example.com,Barcelona,Cataluna,ES,2022-05-09,2024-06-23,2025-06-16,6,4447.84,vip
+566,Sara Fernandez,sara.fernandez566@example.com,Alcala de Henares,Madrid,ES,2023-03-15,2024-08-01,2025-12-29,5,814.25,regular
+567,Carmen Alvarez,carmen.alvarez567@example.com,Malaga,Andalucia,ES,2022-05-26,2024-01-12,2025-10-24,10,3019.25,vip
+568,Sofia Dominguez,sofia.dominguez568@example.com,Alicante,Comunidad Valenciana,ES,2022-04-18,2024-01-05,2025-10-24,9,1900.99,regular
+569,Alba Perez,alba.perez569@example.com,Malaga,Andalucia,ES,2023-11-12,2024-06-18,2025-12-18,13,5161.03,vip
+570,Julia Martin,julia.martin570@example.com,Getafe,Madrid,ES,2023-02-17,2024-08-26,2025-12-27,4,1240.73,occasional
+571,Mateo Perez,mateo.perez571@example.com,Vigo,Galicia,ES,2023-08-17,2024-11-05,2025-11-09,5,1566.33,regular
+572,Marcos Diaz,marcos.diaz572@example.com,Sevilla,Andalucia,ES,2022-04-22,2024-04-16,2025-09-05,13,4080.69,vip
+573,Marcos Alvarez,marcos.alvarez573@example.com,Castellon,Comunidad Valenciana,ES,2022-07-22,2024-04-22,2025-11-25,9,4165.85,vip
+574,Martina Martin,martina.martin574@example.com,Tarragona,Cataluna,ES,2022-08-01,,,0,0,new
+575,Lucia Martinez,lucia.martinez575@example.com,Toledo,Castilla-La Mancha,ES,2023-06-18,2024-03-25,2025-08-18,5,1220.86,regular
+576,Hugo Moreno,hugo.moreno576@example.com,Girona,Cataluna,ES,2023-11-11,2024-09-05,2025-11-04,7,3909.15,vip
+577,Elena Romero,elena.romero577@example.com,Sevilla,Andalucia,ES,2022-11-21,2024-07-04,2025-11-10,2,653.40,occasional
+578,Alvaro Alvarez,alvaro.alvarez578@example.com,Girona,Cataluna,ES,2022-05-03,2024-03-23,2025-12-06,9,2876.73,regular
+579,Javier Ruiz,javier.ruiz579@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-01-14,2024-05-08,2025-11-14,12,3768.20,vip
+580,Martina Martin,martina.martin580@example.com,Santiago,Galicia,ES,2023-12-04,2024-02-11,2025-09-25,7,2173.55,regular
+581,Daniel Perez,daniel.perez581@example.com,Tarragona,Cataluna,ES,2022-02-07,2024-05-16,2025-11-30,9,3444.24,vip
+582,Bruno Garcia,bruno.garcia582@example.com,Getafe,Madrid,ES,2022-09-03,2024-02-18,2025-05-25,5,2128.35,regular
+583,Daniel Gomez,daniel.gomez583@example.com,Getafe,Madrid,ES,2022-04-19,2024-04-27,2025-10-06,8,3692.35,vip
+584,Paula Diaz,paula.diaz584@example.com,A Coruna,Galicia,ES,2022-12-12,2024-11-20,2025-10-19,6,1533.12,regular
+585,Pablo Romero,pablo.romero585@example.com,Castellon,Comunidad Valenciana,ES,2022-04-03,2024-10-14,2025-05-28,3,219.26,occasional
+586,Alvaro Navarro,alvaro.navarro586@example.com,Santiago,Galicia,ES,2022-03-10,2024-11-08,2025-10-31,7,1770.81,regular
+587,Mario Gonzalez,mario.gonzalez587@example.com,Alcala de Henares,Madrid,ES,2023-01-22,2024-01-02,2025-01-24,5,1896.72,regular
+588,Noa Martin,noa.martin588@example.com,Sevilla,Andalucia,ES,2023-06-23,2024-05-31,2025-12-03,4,802.79,occasional
+589,Carmen Jimenez,carmen.jimenez589@example.com,Albacete,Castilla-La Mancha,ES,2022-02-03,2024-01-28,2025-09-26,12,5910.11,vip
+590,Paula Diaz,paula.diaz590@example.com,Granada,Andalucia,ES,2022-11-13,2024-03-01,2025-10-16,10,2571.11,regular
+591,Valeria Jimenez,valeria.jimenez591@example.com,Albacete,Castilla-La Mancha,ES,2023-05-19,2024-03-02,2025-10-15,10,4177.78,vip
+592,Alvaro Romero,alvaro.romero592@example.com,Santiago,Galicia,ES,2023-02-28,2024-03-21,2025-10-08,9,2978.36,regular
+593,Pablo Fernandez,pablo.fernandez593@example.com,Tarragona,Cataluna,ES,2022-09-06,2024-01-24,2025-12-16,3,1063.11,occasional
+594,Bruno Jimenez,bruno.jimenez594@example.com,Tarragona,Cataluna,ES,2022-03-02,2025-01-20,2025-11-10,6,1298.04,regular
+595,Diego Jimenez,diego.jimenez595@example.com,Sevilla,Andalucia,ES,2022-12-17,2024-02-18,2025-08-25,8,2042.80,regular
+596,Hugo Torres,hugo.torres596@example.com,Valencia,Comunidad Valenciana,ES,2022-05-17,2024-03-24,2025-12-10,7,3080.64,vip
+597,Mateo Hernandez,mateo.hernandez597@example.com,Toledo,Castilla-La Mancha,ES,2022-07-08,2024-04-04,2025-12-29,12,6801.34,vip
+598,Valeria Jimenez,valeria.jimenez598@example.com,Girona,Cataluna,ES,2022-11-08,2024-03-22,2025-04-12,5,909.70,regular
+599,Julia Martinez,julia.martinez599@example.com,Barcelona,Cataluna,ES,2023-10-11,2024-01-20,2025-12-12,6,3247.67,vip
+600,Noa Rodriguez,noa.rodriguez600@example.com,Sevilla,Andalucia,ES,2023-12-28,2024-07-22,2025-10-27,6,1551.25,regular
+601,Leo Alvarez,leo.alvarez601@example.com,Albacete,Castilla-La Mancha,ES,2023-10-03,2024-01-20,2025-11-11,7,3009.61,vip
+602,Diego Alvarez,diego.alvarez602@example.com,Castellon,Comunidad Valenciana,ES,2022-12-05,2024-01-23,2025-08-18,9,2918.26,regular
+603,Lucia Jimenez,lucia.jimenez603@example.com,Granada,Andalucia,ES,2022-07-07,2024-02-22,2025-07-22,4,1489.90,occasional
+604,Daniel Perez,daniel.perez604@example.com,A Coruna,Galicia,ES,2022-01-21,2024-02-05,2025-10-26,7,2362.70,regular
+605,Irene Torres,irene.torres605@example.com,Alicante,Comunidad Valenciana,ES,2023-02-22,2024-04-22,2025-08-23,6,2047.30,regular
+606,Elena Romero,elena.romero606@example.com,Granada,Andalucia,ES,2022-05-01,2024-07-14,2025-12-07,9,2358.38,regular
+607,Julia Alvarez,julia.alvarez607@example.com,Girona,Cataluna,ES,2022-12-30,2024-06-17,2025-12-25,5,1367.59,regular
+608,Daniel Perez,daniel.perez608@example.com,Getafe,Madrid,ES,2023-08-20,2024-04-12,2025-10-11,8,1888.07,regular
+609,Mateo Ruiz,mateo.ruiz609@example.com,Tarragona,Cataluna,ES,2022-03-06,2024-03-06,2025-08-30,7,3255.24,vip
+610,Javier Dominguez,javier.dominguez610@example.com,Sevilla,Andalucia,ES,2023-11-13,2024-07-25,2025-12-18,6,1891.01,regular
+611,Lucia Rodriguez,lucia.rodriguez611@example.com,A Coruna,Galicia,ES,2022-01-25,2024-07-12,2025-11-25,7,3215.89,vip
+612,Paula Alvarez,paula.alvarez612@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-01-13,2024-05-16,2025-11-27,7,1950.24,regular
+613,Pablo Diaz,pablo.diaz613@example.com,Getafe,Madrid,ES,2022-02-23,2024-02-04,2025-12-05,7,1446.70,regular
+614,Alba Lopez,alba.lopez614@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-10-30,2024-06-13,2025-05-24,6,2008.57,regular
+615,Mateo Martin,mateo.martin615@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-09-07,2024-02-17,2025-10-16,8,1571.90,regular
+616,Paula Romero,paula.romero616@example.com,Barcelona,Cataluna,ES,2023-06-09,2024-06-30,2025-12-14,7,1516.98,regular
+617,Javier Alvarez,javier.alvarez617@example.com,Madrid,Madrid,ES,2023-06-03,2024-04-27,2025-12-19,12,4327.58,vip
+618,Lucia Gonzalez,lucia.gonzalez618@example.com,Madrid,Madrid,ES,2023-09-10,2024-03-28,2025-06-07,6,2230.95,regular
+619,Irene Gonzalez,irene.gonzalez619@example.com,Alcala de Henares,Madrid,ES,2023-09-20,2024-05-13,2025-10-13,7,2625.50,regular
+620,Paula Moreno,paula.moreno620@example.com,Sevilla,Andalucia,ES,2023-11-11,2024-10-04,2025-11-16,8,1978.34,regular
+621,Alvaro Jimenez,alvaro.jimenez621@example.com,Sevilla,Andalucia,ES,2022-10-22,2024-01-18,2025-12-26,8,2393.38,regular
+622,Sofia Martinez,sofia.martinez622@example.com,Getafe,Madrid,ES,2023-01-30,2024-11-05,2025-11-10,9,2131.63,regular
+623,Marcos Gonzalez,marcos.gonzalez623@example.com,Malaga,Andalucia,ES,2022-12-16,2024-07-02,2025-11-27,4,770.80,occasional
+624,Elena Gomez,elena.gomez624@example.com,Alicante,Comunidad Valenciana,ES,2022-12-03,2025-07-20,2025-12-22,3,750.20,occasional
+625,Leo Fernandez,leo.fernandez625@example.com,A Coruna,Galicia,ES,2023-08-19,2024-06-01,2024-12-16,2,212.36,occasional
+626,Diego Torres,diego.torres626@example.com,Madrid,Madrid,ES,2022-08-25,2024-02-05,2025-11-20,7,2783.55,regular
+627,Carmen Ruiz,carmen.ruiz627@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-04-15,2024-08-27,2025-04-10,5,2373.11,regular
+628,Mario Alvarez,mario.alvarez628@example.com,Barcelona,Cataluna,ES,2023-09-08,2024-02-23,2025-12-24,9,2641.90,regular
+629,Noa Jimenez,noa.jimenez629@example.com,Granada,Andalucia,ES,2023-12-20,2024-02-21,2025-12-23,8,4223.83,vip
+630,Marcos Torres,marcos.torres630@example.com,Albacete,Castilla-La Mancha,ES,2023-05-17,2024-01-23,2025-02-18,4,1833.30,occasional
+631,Irene Dominguez,irene.dominguez631@example.com,Albacete,Castilla-La Mancha,ES,2023-09-26,2024-02-26,2025-10-22,7,2214.25,regular
+632,Bruno Hernandez,bruno.hernandez632@example.com,Granada,Andalucia,ES,2023-08-02,2024-03-30,2025-08-21,6,1205.04,regular
+633,Lucia Martinez,lucia.martinez633@example.com,Madrid,Madrid,ES,2022-08-02,2024-05-02,2025-11-05,10,3223.16,vip
+634,Mario Jimenez,mario.jimenez634@example.com,Getafe,Madrid,ES,2023-04-30,2024-08-21,2025-11-30,4,3278.81,vip
+635,Javier Hernandez,javier.hernandez635@example.com,Girona,Cataluna,ES,2022-11-15,2025-01-02,2025-11-11,5,829.50,regular
+636,Elena Gonzalez,elena.gonzalez636@example.com,Albacete,Castilla-La Mancha,ES,2022-08-09,2024-02-17,2025-09-29,4,1195.90,occasional
+637,Noa Garcia,noa.garcia637@example.com,Santiago,Galicia,ES,2023-09-18,2025-02-11,2025-12-06,5,2632.20,regular
+638,Martina Dominguez,martina.dominguez638@example.com,Getafe,Madrid,ES,2022-04-08,2025-03-24,2025-04-19,3,885.99,occasional
+639,Noa Moreno,noa.moreno639@example.com,Barcelona,Cataluna,ES,2023-01-17,2024-09-04,2025-09-08,6,1303.43,regular
+640,Julia Navarro,julia.navarro640@example.com,Alicante,Comunidad Valenciana,ES,2022-04-07,2024-05-09,2025-11-27,6,1956.72,regular
+641,Elena Fernandez,elena.fernandez641@example.com,Vigo,Galicia,ES,2023-09-24,2024-03-04,2025-12-17,12,2085.80,vip
+642,Noa Martin,noa.martin642@example.com,Sevilla,Andalucia,ES,2022-06-20,2024-09-03,2025-10-11,7,2431.98,regular
+643,Mario Lopez,mario.lopez643@example.com,Barcelona,Cataluna,ES,2022-11-08,2024-02-20,2025-07-04,8,2600.68,regular
+644,Carmen Sanchez,carmen.sanchez644@example.com,Alcala de Henares,Madrid,ES,2022-09-20,2024-04-30,2025-08-14,6,2315.19,regular
+645,Diego Rodriguez,diego.rodriguez645@example.com,Alcala de Henares,Madrid,ES,2022-03-24,2024-05-09,2025-08-08,12,5435.82,vip
+646,Bruno Torres,bruno.torres646@example.com,Castellon,Comunidad Valenciana,ES,2022-08-03,2024-09-19,2025-11-12,5,1525.70,regular
+647,Hugo Navarro,hugo.navarro647@example.com,Santiago,Galicia,ES,2022-10-15,2024-02-05,2025-09-29,6,748.72,regular
+648,Alba Torres,alba.torres648@example.com,Girona,Cataluna,ES,2023-07-08,2024-06-18,2024-07-01,2,531.50,occasional
+649,Adrian Dominguez,adrian.dominguez649@example.com,Santiago,Galicia,ES,2023-02-06,2024-03-02,2025-12-29,9,2542.64,regular
+650,Daniel Gomez,daniel.gomez650@example.com,Vigo,Galicia,ES,2022-11-20,2024-01-21,2025-12-25,8,1361.74,regular
+651,Sofia Diaz,sofia.diaz651@example.com,Girona,Cataluna,ES,2022-04-25,2024-10-28,2025-05-12,3,1651.11,occasional
+652,Javier Jimenez,javier.jimenez652@example.com,Santiago,Galicia,ES,2022-06-14,2024-02-24,2025-11-09,6,1525.39,regular
+653,Pablo Ruiz,pablo.ruiz653@example.com,A Coruna,Galicia,ES,2022-02-12,2024-08-11,2025-05-01,4,1900.62,occasional
+654,Javier Jimenez,javier.jimenez654@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-09-05,2024-03-24,2025-11-29,9,2772.61,regular
+655,Bruno Diaz,bruno.diaz655@example.com,Albacete,Castilla-La Mancha,ES,2022-02-10,2024-06-28,2025-09-08,3,1060.88,occasional
+656,Lucia Romero,lucia.romero656@example.com,Castellon,Comunidad Valenciana,ES,2023-09-14,2024-03-08,2025-07-29,7,1717.52,regular
+657,Valeria Gomez,valeria.gomez657@example.com,Madrid,Madrid,ES,2023-07-21,2024-03-28,2025-10-29,12,2748.69,vip
+658,Alba Martin,alba.martin658@example.com,Alcala de Henares,Madrid,ES,2023-06-07,2024-03-20,2025-09-26,9,4535.02,vip
+659,Adrian Navarro,adrian.navarro659@example.com,Madrid,Madrid,ES,2023-05-17,2024-12-22,2025-10-15,3,363.00,occasional
+660,Alba Martin,alba.martin660@example.com,Albacete,Castilla-La Mancha,ES,2022-01-22,2024-02-03,2025-12-03,8,2069.01,regular
+661,Bruno Jimenez,bruno.jimenez661@example.com,Valencia,Comunidad Valenciana,ES,2022-06-15,2024-07-28,2025-10-12,10,5672.21,vip
+662,Elena Perez,elena.perez662@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-03-24,2024-04-05,2025-12-02,8,4448.74,vip
+663,Marcos Dominguez,marcos.dominguez663@example.com,Albacete,Castilla-La Mancha,ES,2023-06-14,2024-03-19,2025-12-05,4,1926.26,occasional
+664,Leo Gonzalez,leo.gonzalez664@example.com,Valencia,Comunidad Valenciana,ES,2023-06-24,2024-04-14,2025-12-14,17,6694.23,vip
+665,Hugo Diaz,hugo.diaz665@example.com,Castellon,Comunidad Valenciana,ES,2023-03-22,2024-02-10,2025-10-27,10,3005.15,vip
+666,Lucia Jimenez,lucia.jimenez666@example.com,Sevilla,Andalucia,ES,2022-09-11,2024-02-17,2025-05-28,7,2875.70,regular
+667,Adrian Rodriguez,adrian.rodriguez667@example.com,Malaga,Andalucia,ES,2022-04-01,2024-03-15,2025-05-05,2,1013.77,occasional
+668,Javier Ruiz,javier.ruiz668@example.com,Toledo,Castilla-La Mancha,ES,2023-10-19,2024-06-12,2025-11-16,4,649.85,occasional
+669,Irene Gonzalez,irene.gonzalez669@example.com,Girona,Cataluna,ES,2022-08-02,2024-05-21,2025-03-04,4,1733.56,occasional
+670,Alvaro Perez,alvaro.perez670@example.com,Alcala de Henares,Madrid,ES,2023-05-28,2024-11-29,2025-11-14,8,3316.01,vip
+671,Adrian Romero,adrian.romero671@example.com,Tarragona,Cataluna,ES,2022-09-02,2024-01-25,2025-09-29,10,4854.29,vip
+672,Mateo Ruiz,mateo.ruiz672@example.com,Getafe,Madrid,ES,2022-10-02,2024-03-23,2025-10-22,7,2127.42,regular
+673,Hugo Jimenez,hugo.jimenez673@example.com,Girona,Cataluna,ES,2022-12-07,2024-05-05,2025-10-24,8,3290.19,vip
+674,Javier Martin,javier.martin674@example.com,Malaga,Andalucia,ES,2023-12-07,2024-03-26,2025-08-09,7,1611.28,regular
+675,Irene Moreno,irene.moreno675@example.com,Toledo,Castilla-La Mancha,ES,2022-08-21,2024-03-05,2025-12-17,7,1986.12,regular
+676,Irene Gonzalez,irene.gonzalez676@example.com,Granada,Andalucia,ES,2023-09-25,2024-01-30,2025-10-09,7,3676.38,vip
+677,Lucia Gonzalez,lucia.gonzalez677@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-05-31,2024-02-16,2025-09-21,6,2242.32,regular
+678,Mateo Sanchez,mateo.sanchez678@example.com,Castellon,Comunidad Valenciana,ES,2022-06-30,2024-02-06,2025-10-22,12,4209.89,vip
+679,Noa Gonzalez,noa.gonzalez679@example.com,Alicante,Comunidad Valenciana,ES,2022-01-29,2024-03-11,2025-10-17,9,4073.16,vip
+680,Martina Gonzalez,martina.gonzalez680@example.com,Madrid,Madrid,ES,2023-11-07,2024-01-31,2025-08-31,7,1803.66,regular
+681,Daniel Gomez,daniel.gomez681@example.com,Albacete,Castilla-La Mancha,ES,2022-11-10,2024-02-02,2025-12-16,6,4969.78,vip
+682,Lucia Hernandez,lucia.hernandez682@example.com,Granada,Andalucia,ES,2022-02-11,2024-01-28,2025-11-09,8,2360.09,regular
+683,Martina Torres,martina.torres683@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-11-16,2024-06-24,2025-11-20,7,2149.28,regular
+684,Pablo Martin,pablo.martin684@example.com,Alcala de Henares,Madrid,ES,2022-04-20,2024-03-26,2025-12-16,12,2089.22,vip
+685,Carmen Garcia,carmen.garcia685@example.com,Castellon,Comunidad Valenciana,ES,2022-09-03,2025-01-09,2025-12-15,4,1080.35,occasional
+686,Javier Martin,javier.martin686@example.com,Castellon,Comunidad Valenciana,ES,2022-03-23,2024-02-13,2025-08-21,7,3022.45,vip
+687,Alvaro Garcia,alvaro.garcia687@example.com,A Coruna,Galicia,ES,2022-06-14,2024-06-28,2025-10-11,9,3013.66,vip
+688,Sara Dominguez,sara.dominguez688@example.com,Alcala de Henares,Madrid,ES,2022-11-24,2024-05-02,2025-08-10,3,1286.63,occasional
+689,Marcos Ruiz,marcos.ruiz689@example.com,Tarragona,Cataluna,ES,2023-05-30,2024-02-15,2025-12-16,10,3085.69,vip
+690,Leo Martinez,leo.martinez690@example.com,Barcelona,Cataluna,ES,2023-05-20,2024-05-29,2025-09-30,6,3380.52,vip
+691,Bruno Torres,bruno.torres691@example.com,Tarragona,Cataluna,ES,2023-11-07,2024-01-26,2025-12-18,8,1364.84,regular
+692,Noa Navarro,noa.navarro692@example.com,Valencia,Comunidad Valenciana,ES,2023-10-19,2024-03-10,2025-12-08,7,5230.09,vip
+693,Marcos Torres,marcos.torres693@example.com,Tarragona,Cataluna,ES,2022-08-21,2024-04-18,2025-10-02,8,2492.02,regular
+694,Daniel Fernandez,daniel.fernandez694@example.com,Vigo,Galicia,ES,2023-03-16,2024-06-28,2025-11-17,10,2748.65,regular
+695,Elena Jimenez,elena.jimenez695@example.com,Valencia,Comunidad Valenciana,ES,2022-04-10,2024-03-02,2025-11-18,8,899.78,regular
+696,Sara Ruiz,sara.ruiz696@example.com,Albacete,Castilla-La Mancha,ES,2023-02-12,2024-02-29,2025-09-13,10,4598.13,vip
+697,Daniel Diaz,daniel.diaz697@example.com,Tarragona,Cataluna,ES,2023-03-24,2024-01-25,2025-09-22,6,2589.24,regular
+698,Mario Moreno,mario.moreno698@example.com,Granada,Andalucia,ES,2022-10-02,2024-05-18,2024-10-24,2,1366.01,occasional
+699,Leo Dominguez,leo.dominguez699@example.com,Madrid,Madrid,ES,2023-10-10,2024-05-28,2025-12-03,5,4288.92,vip
+700,Valeria Gomez,valeria.gomez700@example.com,Toledo,Castilla-La Mancha,ES,2022-03-31,2024-01-27,2025-08-17,6,1075.24,regular
+701,Noa Garcia,noa.garcia701@example.com,Toledo,Castilla-La Mancha,ES,2022-05-16,2024-03-03,2025-11-21,9,4734.26,vip
+702,Javier Gomez,javier.gomez702@example.com,Getafe,Madrid,ES,2022-06-24,2024-03-29,2025-09-27,7,2472.00,regular
+703,Alvaro Hernandez,alvaro.hernandez703@example.com,Girona,Cataluna,ES,2023-05-18,2024-04-11,2025-11-27,13,4925.18,vip
+704,Elena Romero,elena.romero704@example.com,Barcelona,Cataluna,ES,2022-07-28,2024-06-12,2025-12-14,9,3943.77,vip
+705,Daniel Dominguez,daniel.dominguez705@example.com,Vigo,Galicia,ES,2022-01-31,2024-03-07,2025-11-03,8,1609.78,regular
+706,Leo Torres,leo.torres706@example.com,Tarragona,Cataluna,ES,2022-06-01,2024-07-14,2025-05-20,5,1591.24,regular
+707,Mario Ruiz,mario.ruiz707@example.com,A Coruna,Galicia,ES,2023-11-21,2024-02-08,2025-12-20,10,1705.78,regular
+708,Alvaro Perez,alvaro.perez708@example.com,Malaga,Andalucia,ES,2023-11-19,2024-05-09,2025-11-07,9,1941.35,regular
+709,Mario Moreno,mario.moreno709@example.com,Valencia,Comunidad Valenciana,ES,2023-11-15,2024-04-04,2025-12-20,6,2305.78,regular
+710,Irene Gomez,irene.gomez710@example.com,Vigo,Galicia,ES,2023-04-07,2024-11-19,2025-11-08,6,2139.60,regular
+711,Carmen Ruiz,carmen.ruiz711@example.com,Santiago,Galicia,ES,2022-05-10,2024-04-23,2025-09-13,2,259.33,occasional
+712,Carmen Perez,carmen.perez712@example.com,Malaga,Andalucia,ES,2022-07-22,2024-05-30,2025-09-08,5,1682.58,regular
+713,Mario Dominguez,mario.dominguez713@example.com,Valencia,Comunidad Valenciana,ES,2023-12-26,2024-08-01,2025-09-10,9,3086.02,vip
+714,Martina Romero,martina.romero714@example.com,Malaga,Andalucia,ES,2022-03-14,2024-02-01,2025-12-03,7,2654.32,regular
+715,Adrian Fernandez,adrian.fernandez715@example.com,Granada,Andalucia,ES,2022-02-24,2024-03-26,2025-06-18,6,3924.14,vip
+716,Mario Alvarez,mario.alvarez716@example.com,Alcala de Henares,Madrid,ES,2022-08-29,2024-04-17,2025-12-11,3,792.61,occasional
+717,Daniel Rodriguez,daniel.rodriguez717@example.com,Getafe,Madrid,ES,2023-08-24,2024-07-03,2025-08-30,5,1343.80,regular
+718,Hugo Torres,hugo.torres718@example.com,Toledo,Castilla-La Mancha,ES,2023-08-04,2024-05-01,2025-07-28,9,4198.21,vip
+719,Carmen Dominguez,carmen.dominguez719@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-06-03,2024-07-10,2025-12-17,8,7257.24,vip
+720,Pablo Gonzalez,pablo.gonzalez720@example.com,Vigo,Galicia,ES,2023-05-25,2025-02-12,2025-12-16,3,269.59,occasional
+721,Daniel Diaz,daniel.diaz721@example.com,Barcelona,Cataluna,ES,2022-04-26,2024-11-15,2025-12-25,6,1563.62,regular
+722,Bruno Romero,bruno.romero722@example.com,Albacete,Castilla-La Mancha,ES,2023-04-06,2024-04-09,2025-12-28,11,4199.05,vip
+723,Sara Gonzalez,sara.gonzalez723@example.com,Toledo,Castilla-La Mancha,ES,2023-05-11,2024-08-13,2025-08-07,4,2484.86,occasional
+724,Irene Romero,irene.romero724@example.com,Barcelona,Cataluna,ES,2022-01-31,2024-06-03,2025-10-06,12,4011.99,vip
+725,Mario Dominguez,mario.dominguez725@example.com,Tarragona,Cataluna,ES,2022-04-27,2024-03-24,2025-12-11,7,2948.26,regular
+726,Martina Alvarez,martina.alvarez726@example.com,Madrid,Madrid,ES,2022-02-25,2024-03-27,2025-12-14,6,4287.34,vip
+727,Noa Diaz,noa.diaz727@example.com,Santiago,Galicia,ES,2022-07-16,2024-07-14,2025-11-01,7,2872.56,regular
+728,Diego Perez,diego.perez728@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-08-26,2024-01-19,2025-10-22,6,1430.60,regular
+729,Alba Torres,alba.torres729@example.com,A Coruna,Galicia,ES,2023-09-23,2024-06-25,2024-10-05,6,2926.07,regular
+730,Pablo Dominguez,pablo.dominguez730@example.com,Getafe,Madrid,ES,2022-06-24,2024-03-29,2025-10-29,7,2200.75,regular
+731,Lucia Torres,lucia.torres731@example.com,Santiago,Galicia,ES,2022-07-15,2024-01-27,2025-11-11,7,2905.65,regular
+732,Alba Jimenez,alba.jimenez732@example.com,Tarragona,Cataluna,ES,2022-11-09,2024-02-27,2025-11-15,10,2396.48,regular
+733,Paula Gomez,paula.gomez733@example.com,Albacete,Castilla-La Mancha,ES,2022-07-02,2024-12-17,2025-12-16,3,1403.32,occasional
+734,Carmen Sanchez,carmen.sanchez734@example.com,A Coruna,Galicia,ES,2022-11-04,2024-01-25,2025-11-16,8,5839.49,vip
+735,Javier Navarro,javier.navarro735@example.com,Malaga,Andalucia,ES,2022-08-24,2024-04-08,2025-09-08,7,3474.13,vip
+736,Carmen Lopez,carmen.lopez736@example.com,Santiago,Galicia,ES,2022-02-25,2024-02-02,2025-12-11,7,1665.04,regular
+737,Mateo Sanchez,mateo.sanchez737@example.com,Tarragona,Cataluna,ES,2022-07-30,2024-03-30,2025-08-08,10,2641.76,regular
+738,Alba Rodriguez,alba.rodriguez738@example.com,Toledo,Castilla-La Mancha,ES,2023-07-21,2024-01-24,2025-11-21,9,3187.40,vip
+739,Mario Dominguez,mario.dominguez739@example.com,Girona,Cataluna,ES,2022-10-13,2024-11-26,2025-10-28,3,846.36,occasional
+740,Adrian Rodriguez,adrian.rodriguez740@example.com,Getafe,Madrid,ES,2022-12-04,2024-04-13,2025-10-10,7,3946.31,vip
+741,Pablo Dominguez,pablo.dominguez741@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-11-04,2024-03-28,2025-04-02,6,1352.98,regular
+742,Elena Garcia,elena.garcia742@example.com,Castellon,Comunidad Valenciana,ES,2023-06-09,2024-09-02,2025-11-08,6,2916.90,regular
+743,Valeria Rodriguez,valeria.rodriguez743@example.com,Granada,Andalucia,ES,2022-04-28,2024-04-26,2025-10-16,5,2467.67,regular
+744,Bruno Rodriguez,bruno.rodriguez744@example.com,Barcelona,Cataluna,ES,2022-12-29,2024-10-11,2025-11-17,6,3772.38,vip
+745,Paula Hernandez,paula.hernandez745@example.com,Madrid,Madrid,ES,2023-01-05,2024-01-16,2025-11-05,8,5236.39,vip
+746,Lucia Gonzalez,lucia.gonzalez746@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-10-01,2024-01-17,2024-08-03,3,70.96,occasional
+747,Alvaro Ruiz,alvaro.ruiz747@example.com,Albacete,Castilla-La Mancha,ES,2023-03-24,2024-07-22,2025-12-23,8,3197.22,vip
+748,Sara Garcia,sara.garcia748@example.com,Castellon,Comunidad Valenciana,ES,2023-04-09,2024-01-10,2025-12-04,15,5782.57,vip
+749,Irene Martin,irene.martin749@example.com,Alcala de Henares,Madrid,ES,2023-01-18,2024-03-11,2025-10-08,6,2268.99,regular
+750,Sara Gomez,sara.gomez750@example.com,Albacete,Castilla-La Mancha,ES,2022-01-21,2024-01-16,2025-10-27,6,2304.81,regular
+751,Julia Moreno,julia.moreno751@example.com,Barcelona,Cataluna,ES,2022-02-03,2024-07-09,2025-10-13,6,1210.79,regular
+752,Mateo Gomez,mateo.gomez752@example.com,Valencia,Comunidad Valenciana,ES,2023-10-24,2024-06-10,2025-12-20,8,3994.22,vip
+753,Alba Perez,alba.perez753@example.com,Santiago,Galicia,ES,2023-02-12,2024-01-14,2025-07-06,6,3691.80,vip
+754,Alba Gomez,alba.gomez754@example.com,Getafe,Madrid,ES,2023-04-22,2024-05-04,2025-04-17,3,1007.13,occasional
+755,Martina Navarro,martina.navarro755@example.com,Granada,Andalucia,ES,2023-07-03,2024-04-21,2025-12-04,9,3430.54,vip
+756,Leo Sanchez,leo.sanchez756@example.com,Sevilla,Andalucia,ES,2022-08-09,2024-01-16,2025-09-13,9,3631.76,vip
+757,Valeria Perez,valeria.perez757@example.com,Malaga,Andalucia,ES,2023-06-08,2024-02-15,2025-12-10,6,2791.67,regular
+758,Mateo Fernandez,mateo.fernandez758@example.com,Tarragona,Cataluna,ES,2023-10-13,2024-08-04,2025-09-02,7,2963.72,regular
+759,Javier Rodriguez,javier.rodriguez759@example.com,Getafe,Madrid,ES,2022-08-26,2024-01-22,2025-11-15,9,4344.95,vip
+760,Mario Martinez,mario.martinez760@example.com,Granada,Andalucia,ES,2022-07-27,2024-04-14,2025-08-25,6,3426.07,vip
+761,Hugo Romero,hugo.romero761@example.com,Tarragona,Cataluna,ES,2022-10-25,2024-11-24,2025-04-21,2,496.94,occasional
+762,Carmen Martinez,carmen.martinez762@example.com,Malaga,Andalucia,ES,2022-09-20,2024-03-09,2025-12-15,10,7993.79,vip
+763,Alba Garcia,alba.garcia763@example.com,Sevilla,Andalucia,ES,2023-12-20,2024-04-25,2025-04-26,4,1112.45,occasional
+764,Alvaro Dominguez,alvaro.dominguez764@example.com,Malaga,Andalucia,ES,2023-04-11,2024-10-27,2025-09-03,6,1274.35,regular
+765,Adrian Jimenez,adrian.jimenez765@example.com,Alicante,Comunidad Valenciana,ES,2022-12-23,2024-05-01,2025-10-26,6,4239.00,vip
+766,Alvaro Ruiz,alvaro.ruiz766@example.com,A Coruna,Galicia,ES,2022-11-17,2024-01-24,2025-12-17,9,2006.45,regular
+767,Bruno Perez,bruno.perez767@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-09-21,2024-03-17,2025-10-30,6,3013.26,vip
+768,Carmen Sanchez,carmen.sanchez768@example.com,Alicante,Comunidad Valenciana,ES,2023-08-05,2024-07-29,2025-05-26,5,1252.38,regular
+769,Leo Diaz,leo.diaz769@example.com,Vigo,Galicia,ES,2022-08-08,2024-04-30,2025-11-05,8,1705.47,regular
+770,Javier Jimenez,javier.jimenez770@example.com,Ciudad Real,Castilla-La Mancha,ES,2022-08-21,2024-04-13,2025-11-13,9,2943.19,regular
+771,Carmen Fernandez,carmen.fernandez771@example.com,Alcala de Henares,Madrid,ES,2022-01-24,2024-10-23,2025-09-26,7,2285.74,regular
+772,Noa Fernandez,noa.fernandez772@example.com,Alicante,Comunidad Valenciana,ES,2022-09-28,2024-03-13,2025-10-12,7,2557.78,regular
+773,Javier Gomez,javier.gomez773@example.com,Ciudad Real,Castilla-La Mancha,ES,2023-01-14,2024-11-14,2025-08-12,2,310.33,occasional
+774,Valeria Torres,valeria.torres774@example.com,Albacete,Castilla-La Mancha,ES,2022-05-22,2024-01-24,2025-09-20,2,587.13,occasional
+775,Julia Romero,julia.romero775@example.com,Sevilla,Andalucia,ES,2022-08-20,2024-02-02,2025-12-15,12,4494.95,vip
+776,Adrian Martin,adrian.martin776@example.com,Valencia,Comunidad Valenciana,ES,2022-09-14,2024-03-15,2025-12-08,13,2972.65,vip
+777,Julia Diaz,julia.diaz777@example.com,A Coruna,Galicia,ES,2022-03-26,2024-07-30,2025-11-19,6,1605.80,regular
+778,Leo Jimenez,leo.jimenez778@example.com,Getafe,Madrid,ES,2023-05-13,2024-02-07,2025-12-22,3,826.31,occasional
+779,Adrian Hernandez,adrian.hernandez779@example.com,Malaga,Andalucia,ES,2023-03-30,2024-11-06,2025-03-08,2,487.27,occasional
+780,Sara Romero,sara.romero780@example.com,A Coruna,Galicia,ES,2022-09-27,2024-01-29,2025-11-26,8,2725.08,regular
+781,Marcos Perez,marcos.perez781@example.com,Tarragona,Cataluna,ES,2022-02-23,2024-05-02,2025-10-30,9,4060.23,vip
+782,Valeria Martinez,valeria.martinez782@example.com,Alcala de Henares,Madrid,ES,2022-11-21,2024-07-27,2025-10-11,5,1469.04,regular
+783,Hugo Garcia,hugo.garcia783@example.com,Toledo,Castilla-La Mancha,ES,2022-11-21,2024-05-23,2024-05-23,1,162.64,occasional
+784,Adrian Lopez,adrian.lopez784@example.com,Malaga,Andalucia,ES,2023-10-07,2024-06-10,2025-11-08,6,627.68,regular
+785,Daniel Martin,daniel.martin785@example.com,Barcelona,Cataluna,ES,2022-10-05,2024-02-16,2025-05-09,5,3198.86,vip
+786,Hugo Ruiz,hugo.ruiz786@example.com,Getafe,Madrid,ES,2023-02-02,2024-04-03,2025-09-10,8,1663.73,regular
+787,Javier Moreno,javier.moreno787@example.com,Sevilla,Andalucia,ES,2023-08-16,2024-05-28,2025-10-14,3,581.10,occasional
+788,Adrian Moreno,adrian.moreno788@example.com,Albacete,Castilla-La Mancha,ES,2022-03-26,2024-06-22,2025-12-25,9,4422.81,vip
+789,Noa Navarro,noa.navarro789@example.com,Toledo,Castilla-La Mancha,ES,2023-02-18,2024-04-06,2025-10-28,5,2771.32,regular
+790,Elena Martin,elena.martin790@example.com,Madrid,Madrid,ES,2022-12-23,2024-06-18,2025-10-07,11,3780.57,vip
+791,Irene Lopez,irene.lopez791@example.com,Getafe,Madrid,ES,2023-01-14,2024-04-05,2025-11-11,12,4774.17,vip
+792,Mario Martin,mario.martin792@example.com,Castellon,Comunidad Valenciana,ES,2023-12-23,2024-01-21,2025-06-25,6,2147.85,regular
+793,Lucia Navarro,lucia.navarro793@example.com,Girona,Cataluna,ES,2022-12-15,2024-02-17,2025-12-22,11,6706.92,vip
+794,Daniel Martinez,daniel.martinez794@example.com,Alicante,Comunidad Valenciana,ES,2022-03-11,2024-01-27,2025-08-17,10,4721.20,vip
+795,Diego Perez,diego.perez795@example.com,Madrid,Madrid,ES,2022-07-21,2024-02-03,2025-05-12,4,715.01,occasional
+796,Paula Martin,paula.martin796@example.com,Vigo,Galicia,ES,2022-03-08,2024-05-05,2025-08-16,6,1734.41,regular
+797,Martina Martinez,martina.martinez797@example.com,Tarragona,Cataluna,ES,2023-08-15,2024-12-08,2024-12-08,1,221.99,occasional
+798,Paula Dominguez,paula.dominguez798@example.com,Valencia,Comunidad Valenciana,ES,2022-08-16,2024-01-18,2025-10-05,11,4568.20,vip
+799,Lucia Martinez,lucia.martinez799@example.com,Albacete,Castilla-La Mancha,ES,2023-09-19,2025-03-03,2025-03-27,3,441.31,occasional
+800,Lucia Perez,lucia.perez800@example.com,Vigo,Galicia,ES,2023-10-01,2024-06-18,2025-11-13,4,1704.02,occasional

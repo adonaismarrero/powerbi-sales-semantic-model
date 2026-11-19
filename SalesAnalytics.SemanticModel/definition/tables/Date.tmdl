@@ -1,0 +1,103 @@
+/// Calendar (marts.dim_date), marked as the date table of the model.
+table 'Date'
+	dataCategory: Time
+
+	column Date
+		dataType: dateTime
+		isKey
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: date_day
+
+	column Year
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: year
+
+	column Quarter
+		dataType: int64
+		isHidden
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: quarter
+
+	column 'Quarter Label' = "Q" & 'Date'[Quarter]
+		dataType: string
+		summarizeBy: none
+		sortByColumn: Quarter
+
+	column Month
+		dataType: int64
+		isHidden
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: month
+
+	column 'Month Name' = FORMAT ( 'Date'[Date], "MMM" )
+		dataType: string
+		summarizeBy: none
+		sortByColumn: Month
+
+	/// Year and month as text (2025-01), sorts chronologically.
+	column 'Year Month'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: year_month
+
+	column 'ISO Week'
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: iso_week
+
+	column 'Day of Week'
+		dataType: int64
+		isHidden
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: day_of_week
+
+	column 'Day Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: day_name
+		sortByColumn: 'Day of Week'
+
+	column 'Is Weekend'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		summarizeBy: none
+		sourceColumn: is_weekend
+
+	hierarchy Calendar
+
+		level Year
+			column: Year
+
+		level Quarter
+			column: 'Quarter Label'
+
+		level Month
+			column: 'Month Name'
+
+		level Day
+			column: Date
+
+	partition 'Date' = m
+		mode: import
+		source =
+				let
+				    Source = LoadMart("dim_date"),
+				    Selected = Table.SelectColumns(Source, {
+				        "date_day", "year", "quarter", "month", "year_month",
+				        "iso_week", "day_of_week", "day_name", "is_weekend"
+				    }),
+				    Typed = Table.TransformColumnTypes(Selected, {
+				        {"date_day", type date}, {"year", Int64.Type}, {"quarter", Int64.Type},
+				        {"month", Int64.Type}, {"year_month", type text}, {"iso_week", Int64.Type},
+				        {"day_of_week", Int64.Type}, {"day_name", type text}, {"is_weekend", type logical}
+				    }, "en-US")
+				in
+				    Typed
+

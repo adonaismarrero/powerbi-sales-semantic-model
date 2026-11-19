@@ -1,0 +1,44 @@
+/// Where the data comes from: "Sample" (CSV files in this repository) or "BigQuery" (the marts dataset).
+expression SourceMode = "Sample" meta [IsParameterQuery=true, List={"Sample", "BigQuery"}, DefaultValue="Sample", Type="Text", IsParameterQueryRequired=true]
+
+	annotation PBI_ResultType = Text
+
+/// Sample mode: base URL (https://...) or local folder (ending in \) with the CSV files.
+expression SampleDataPath = "https://raw.githubusercontent.com/adonaismarrero/powerbi-sales-semantic-model/main/sample-data/" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+
+	annotation PBI_ResultType = Text
+
+/// BigQuery mode: GCP project that hosts the marts dataset (also used as billing project).
+expression BigQueryProject = "my-company-data-prod" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+
+	annotation PBI_ResultType = Text
+
+/// BigQuery mode: dataset built by Dataform with the star schema.
+expression BigQueryDataset = "marts" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+
+	annotation PBI_ResultType = Text
+
+/// Returns a marts table from BigQuery or from the sample CSV files, with the same columns in both modes.
+expression LoadMart =
+		(tableName as text) as table =>
+		let
+		    FromCsv = (content as binary) as table =>
+		        Table.PromoteHeaders(
+		            Csv.Document(content, [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+		            [PromoteAllScalars = true]
+		        ),
+		    Source =
+		        if SourceMode = "BigQuery" then
+		            GoogleBigQuery.Database([BillingProject = BigQueryProject])
+		                {[Name = BigQueryProject]}[Data]
+		                {[Name = BigQueryDataset, Kind = "Schema"]}[Data]
+		                {[Name = tableName, Kind = "Table"]}[Data]
+		        else if Text.StartsWith(SampleDataPath, "http") then
+		            FromCsv(Web.Contents(SampleDataPath, [RelativePath = tableName & ".csv"]))
+		        else
+		            FromCsv(File.Contents(SampleDataPath & tableName & ".csv"))
+		in
+		    Source
+
+	annotation PBI_ResultType = Function
+

@@ -1,0 +1,128 @@
+/// Home table for all measures, grouped in display folders.
+/// Combine any measure with the 'Time Intelligence' calculation group for MTD, YTD, PY and YoY.
+table _Measures
+
+	/// Revenue after discounts, VAT excluded, of delivered and shipped orders.
+	measure 'Net Revenue' =
+			CALCULATE (
+			    SUM ( Sales[Net Amount] ),
+			    KEEPFILTERS ( Sales[Is Revenue] = TRUE () )
+			)
+		formatString: #,0 €
+		displayFolder: 1. Sales
+
+	/// Revenue before discounts.
+	measure 'Gross Revenue' =
+			CALCULATE (
+			    SUM ( Sales[Gross Amount] ),
+			    KEEPFILTERS ( Sales[Is Revenue] = TRUE () )
+			)
+		formatString: #,0 €
+		displayFolder: 1. Sales
+
+	measure Discounts =
+			CALCULATE (
+			    SUM ( Sales[Discount Amount] ),
+			    KEEPFILTERS ( Sales[Is Revenue] = TRUE () )
+			)
+		formatString: #,0 €
+		displayFolder: 1. Sales
+
+	measure 'Discount %' = DIVIDE ( [Discounts], [Gross Revenue] )
+		formatString: 0.0%
+		displayFolder: 1. Sales
+
+	measure Units =
+			CALCULATE (
+			    SUM ( Sales[Quantity] ),
+			    KEEPFILTERS ( Sales[Is Revenue] = TRUE () )
+			)
+		formatString: #,0
+		displayFolder: 1. Sales
+
+	measure Orders =
+			CALCULATE (
+			    DISTINCTCOUNT ( Sales[Order ID] ),
+			    KEEPFILTERS ( Sales[Is Revenue] = TRUE () )
+			)
+		formatString: #,0
+		displayFolder: 1. Sales
+
+	/// Average revenue per order (AOV).
+	measure 'Avg Order Value' = DIVIDE ( [Net Revenue], [Orders] )
+		formatString: #,0.00 €
+		displayFolder: 1. Sales
+
+	/// Net revenue minus cost of goods sold.
+	measure 'Gross Margin' =
+			CALCULATE (
+			    SUM ( Sales[Margin Amount] ),
+			    KEEPFILTERS ( Sales[Is Revenue] = TRUE () )
+			)
+		formatString: #,0 €
+		displayFolder: 2. Profitability
+
+	measure 'Gross Margin %' = DIVIDE ( [Gross Margin], [Net Revenue] )
+		formatString: 0.0%
+		displayFolder: 2. Profitability
+
+	/// Customers with at least one revenue order in the selected period.
+	measure 'Active Customers' =
+			CALCULATE (
+			    DISTINCTCOUNT ( Sales[Customer ID] ),
+			    KEEPFILTERS ( Sales[Is Revenue] = TRUE () )
+			)
+		formatString: #,0
+		displayFolder: 3. Customers
+
+	/// Customers whose first revenue order falls in the selected period.
+	measure 'New Customers' =
+			CALCULATE (
+			    COUNTROWS ( Customers ),
+			    TREATAS ( VALUES ( 'Date'[Date] ), Customers[First Order Date] )
+			)
+		formatString: #,0
+		displayFolder: 3. Customers
+
+	measure 'Revenue per Customer' = DIVIDE ( [Net Revenue], [Active Customers] )
+		formatString: #,0.00 €
+		displayFolder: 3. Customers
+
+	/// All orders, whatever their status.
+	measure 'All Orders' = DISTINCTCOUNT ( Sales[Order ID] )
+		formatString: #,0
+		displayFolder: 4. Order quality
+
+	measure 'Cancelled Orders' =
+			CALCULATE ( [All Orders], KEEPFILTERS ( Sales[Status] = "cancelled" ) )
+		formatString: #,0
+		displayFolder: 4. Order quality
+
+	measure 'Returned Orders' =
+			CALCULATE ( [All Orders], KEEPFILTERS ( Sales[Status] = "returned" ) )
+		formatString: #,0
+		displayFolder: 4. Order quality
+
+	measure 'Cancellation Rate' = DIVIDE ( [Cancelled Orders], [All Orders] )
+		formatString: 0.0%
+		displayFolder: 4. Order quality
+
+	measure 'Return Rate' = DIVIDE ( [Returned Orders], [All Orders] )
+		formatString: 0.0%
+		displayFolder: 4. Order quality
+
+	column Placeholder
+		dataType: int64
+		isHidden
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: Placeholder
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				    Source = #table(type table [Placeholder = Int64.Type], {})
+				in
+				    Source
+

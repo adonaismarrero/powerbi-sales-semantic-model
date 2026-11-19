@@ -1,0 +1,11 @@
+/// Dynamic RLS: each manager only sees the customers (and therefore the sales) of their regions.
+role 'Regional Manager'
+	modelPermission: read
+
+	tablePermission Customers =
+			Customers[Region]
+			    IN CALCULATETABLE (
+			        VALUES ( Security[Region] ),
+			        Security[User Email] = USERPRINCIPALNAME ()
+			    )
+

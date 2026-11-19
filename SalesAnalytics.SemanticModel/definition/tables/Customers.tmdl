@@ -1,0 +1,85 @@
+/// Customer dimension (marts.dim_customers). Row-level security filters this table by region.
+table Customers
+
+	column 'Customer ID'
+		dataType: int64
+		isHidden
+		isKey
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	column Customer
+		dataType: string
+		summarizeBy: none
+		sourceColumn: full_name
+
+	column City
+		dataType: string
+		dataCategory: City
+		summarizeBy: none
+		sourceColumn: city
+
+	column Region
+		dataType: string
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: region
+
+	column Country
+		dataType: string
+		dataCategory: Country
+		summarizeBy: none
+		sourceColumn: country
+
+	column 'Signup Date'
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: signup_date
+
+	/// Date of the first revenue order. Used by the New Customers measure.
+	column 'First Order Date'
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: first_order_date
+
+	column 'Last Order Date'
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		summarizeBy: none
+		sourceColumn: last_order_date
+
+	/// new / occasional / regular / vip.
+	column Segment
+		dataType: string
+		summarizeBy: none
+		sourceColumn: customer_segment
+		sortByColumn: 'Segment Order'
+
+	column 'Segment Order' =
+			SWITCH ( Customers[Segment], "new", 1, "occasional", 2, "regular", 3, "vip", 4, 5 )
+		dataType: int64
+		isHidden
+		formatString: 0
+		summarizeBy: none
+
+	partition Customers = m
+		mode: import
+		source =
+				let
+				    Source = LoadMart("dim_customers"),
+				    Selected = Table.SelectColumns(Source, {
+				        "customer_id", "full_name", "city", "region", "country",
+				        "signup_date", "first_order_date", "last_order_date", "customer_segment"
+				    }),
+				    Typed = Table.TransformColumnTypes(Selected, {
+				        {"customer_id", Int64.Type}, {"full_name", type text}, {"city", type text},
+				        {"region", type text}, {"country", type text}, {"signup_date", type date},
+				        {"first_order_date", type date}, {"last_order_date", type date},
+				        {"customer_segment", type text}
+				    }, "en-US")
+				in
+				    Typed
+
