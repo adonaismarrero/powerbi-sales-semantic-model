@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import json
 import sys
+import urllib.error
 import urllib.request
 from functools import lru_cache
 from pathlib import Path
@@ -57,7 +58,13 @@ def main(root: Path) -> int:
         if not uri:
             print(f"no $schema    {rel}")
             continue
-        validator_cls = validators.validator_for(fetch(uri))
+        try:
+            schema = fetch(uri)
+        except urllib.error.HTTPError as exc:
+            # Power BI Desktop can write a schema version before Microsoft publishes it.
+            print(f"SKIP          {rel}: schema not published yet ({exc.code})")
+            continue
+        validator_cls = validators.validator_for(schema)
         validator = validator_cls({"$ref": uri}, registry=registry)
         errors = sorted(validator.iter_errors(data), key=lambda e: list(e.absolute_path))
         checked += 1
