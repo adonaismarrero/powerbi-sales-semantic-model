@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "revenueByMonth",
   "position": {
     "x": 20,
     "y": 200,
     "z": 9000,
-    "width": 760,
     "height": 250,
+    "width": 760,
     "tabOrder": 9000
   },
   "visual": {
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Date.Year Month",
-              "nativeQueryRef": "Year Month"
+              "nativeQueryRef": "Year Month",
+              "active": true
             }
           ]
         },
@@ -65,8 +66,7 @@
             },
             "direction": "Ascending"
           }
-        ],
-        "isDefaultSort": false
+        ]
       }
     },
     "visualContainerObjects": {

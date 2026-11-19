@@ -45,6 +45,13 @@ table Products
 		sourceColumn: price_band
 		sortByColumn: 'Price Band Order'
 
+	column 'Is Active'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: a4b92074-fc06-4b43-8a65-8ce1806f87e1
+		summarizeBy: none
+		sourceColumn: is_active
+
 	/// Sort order of Price Band, calculated in Power Query (see Customers[Segment Order]).
 	column 'Price Band Order'
 		dataType: int64
@@ -53,13 +60,6 @@ table Products
 		lineageTag: d3cc7db3-e0fb-4c94-b472-8bdbeb6c7541
 		summarizeBy: none
 		sourceColumn: price_band_order
-
-	column 'Is Active'
-		dataType: boolean
-		formatString: """TRUE"";""TRUE"";""FALSE"""
-		lineageTag: a4b92074-fc06-4b43-8a65-8ce1806f87e1
-		summarizeBy: none
-		sourceColumn: is_active
 
 	partition Products = m
 		mode: import

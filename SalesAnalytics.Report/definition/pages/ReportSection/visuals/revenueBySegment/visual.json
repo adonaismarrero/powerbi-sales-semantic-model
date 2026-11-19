@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "revenueBySegment",
   "position": {
     "x": 790,
     "y": 460,
     "z": 12000,
-    "width": 470,
     "height": 245,
+    "width": 470,
     "tabOrder": 12000
   },
   "visual": {
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Customers.Segment",
-              "nativeQueryRef": "Segment"
+              "nativeQueryRef": "Segment",
+              "active": true
             }
           ]
         },
