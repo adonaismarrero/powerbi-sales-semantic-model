@@ -4,7 +4,7 @@
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
 ![TMDL](https://img.shields.io/badge/TMDL-PBIP-0078D4)
 ![DAX](https://img.shields.io/badge/DAX-measures-555)
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+[![License: MIT © Adonais Marrero](https://img.shields.io/badge/License-MIT%20%C2%A9%20Adonais%20Marrero-green.svg)](LICENSE)
 
 Modelo semántico de **Power BI** en formato de proyecto (**PBIP / TMDL**): todo el modelo es
 texto versionado en Git, revisable en *pull requests* y validado automáticamente en CI.
