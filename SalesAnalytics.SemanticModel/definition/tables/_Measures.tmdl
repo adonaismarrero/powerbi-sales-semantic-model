@@ -23,6 +23,7 @@ table _Measures
 		displayFolder: 1. Sales
 		lineageTag: 7c470936-6f73-431b-89f5-b47abefb5ab4
 
+	/// Discount amount granted on delivered and shipped orders.
 	measure Discounts =
 			CALCULATE (
 			    SUM ( Sales[Discount Amount] ),
@@ -32,11 +33,13 @@ table _Measures
 		displayFolder: 1. Sales
 		lineageTag: 0016db73-510e-4b3d-9ee0-d3170d0e8108
 
+	/// Discounts as a share of gross revenue.
 	measure 'Discount %' = DIVIDE ( [Discounts], [Gross Revenue] )
 		formatString: 0.0%
 		displayFolder: 1. Sales
 		lineageTag: bfc0e8a4-c269-4e38-b238-701ad5cee822
 
+	/// Units sold in delivered and shipped orders.
 	measure Units =
 			CALCULATE (
 			    SUM ( Sales[Quantity] ),
@@ -46,6 +49,7 @@ table _Measures
 		displayFolder: 1. Sales
 		lineageTag: 227778a2-d535-4236-af03-d18d200c3cef
 
+	/// Distinct delivered and shipped orders.
 	measure Orders =
 			CALCULATE (
 			    DISTINCTCOUNT ( Sales[Order ID] ),
@@ -71,6 +75,7 @@ table _Measures
 		displayFolder: 2. Profitability
 		lineageTag: 9e1618dd-bb7f-4c49-a8c9-32289aec0b4f
 
+	/// Gross margin as a share of net revenue.
 	measure 'Gross Margin %' = DIVIDE ( [Gross Margin], [Net Revenue] )
 		formatString: 0.0%
 		displayFolder: 2. Profitability
@@ -96,6 +101,7 @@ table _Measures
 		displayFolder: 3. Customers
 		lineageTag: 073567d4-35e0-4d47-bf29-1b74cbd84bf4
 
+	/// Net revenue divided by active customers.
 	measure 'Revenue per Customer' = DIVIDE ( [Net Revenue], [Active Customers] )
 		formatString: #,0.00 €
 		displayFolder: 3. Customers
@@ -107,21 +113,25 @@ table _Measures
 		displayFolder: 4. Order quality
 		lineageTag: 096183f0-107c-4175-b778-d0a6bef62106
 
+	/// Orders with status cancelled.
 	measure 'Cancelled Orders' = CALCULATE ( [All Orders], KEEPFILTERS ( Sales[Status] = "cancelled" ) )
 		formatString: #,0
 		displayFolder: 4. Order quality
 		lineageTag: 8a438de4-f4cd-4ab0-bffd-334341244c70
 
+	/// Orders with status returned.
 	measure 'Returned Orders' = CALCULATE ( [All Orders], KEEPFILTERS ( Sales[Status] = "returned" ) )
 		formatString: #,0
 		displayFolder: 4. Order quality
 		lineageTag: 92ae41ae-6e3d-4271-9c86-9d77137dc1bf
 
+	/// Cancelled orders as a share of all orders.
 	measure 'Cancellation Rate' = DIVIDE ( [Cancelled Orders], [All Orders] )
 		formatString: 0.0%
 		displayFolder: 4. Order quality
 		lineageTag: 3fcf1e98-eaad-4d9f-a525-bfff36a4e983
 
+	/// Returned orders as a share of all orders.
 	measure 'Return Rate' = DIVIDE ( [Returned Orders], [All Orders] )
 		formatString: 0.0%
 		displayFolder: 4. Order quality
