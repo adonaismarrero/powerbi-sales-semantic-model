@@ -118,7 +118,10 @@ librería que usa Power BI) y comprueba:
   tipos de datos en las relaciones, una única tabla de fechas marcada.
 
 Además, el CI regenera `sample-data/` desde el repositorio del pipeline y verifica que el
-resultado es idéntico.
+resultado es idéntico, y pasa las reglas de buenas prácticas de
+[**pbip-documenter**](https://github.com/adonaismarrero/pbip-documenter) sin admitir avisos.
+La documentación completa del modelo, generada con esa herramienta, está
+[aquí](https://github.com/adonaismarrero/pbip-documenter/blob/main/examples/SalesAnalytics/MODEL.md).
 
 ```bash
 dotnet run --project tools/ModelValidator -- SalesAnalytics.SemanticModel/definition
